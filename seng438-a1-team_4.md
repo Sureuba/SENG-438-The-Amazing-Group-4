@@ -4,7 +4,7 @@
 
 | Group: Group Number      |
 |-----------------|
-| Student 1 name                |   
+| Student 1 Uruba Alam                |   
 | Student 2 name              |   
 | Student 3 name               |   
 | Student 4 name                |   
