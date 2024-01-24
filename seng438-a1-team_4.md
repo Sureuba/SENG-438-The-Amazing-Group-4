@@ -2,34 +2,29 @@
 
 **Lab. Report \#1 – Introduction to Testing and Defect Tracking**
 
-| Group: Group Number      |
+| Group: 4      |
 |-----------------|
 | Student 1 Uruba Alam                |   
 | Student 2 name              |   
-| Student 3 name               |   
-| Student 4 name                |   
+| Student 3 Ding Kai Wu               |   
+| Student 4 Chuhang Qi                |   
 
 
 **Table of Contents**
 
-(When you finish writing, update the following list using right click, then
-“Update Field”)
+[1 Introduction](#Introduction)
 
-[1 Introduction	1](#_Toc439194677)
+[2 High-level description of the exploratory testing plan](#High-level-description-of-the-exploratory-testing-plan)
 
-[2 High-level description of the exploratory testing plan	1](#_Toc439194678)
+[3 Comparison of exploratory and manual functional testing](#Comparison-of-exploratory-and-manual-functional-testing)
 
-[3 Comparison of exploratory and manual functional testing	1](#_Toc439194679)
+[4 Notes and discussion of the peer reviews of defect reports](#Notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
-[4 Notes and discussion of the peer reviews of defect reports	1](#_Toc439194680)
+[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-and-team-work/effort-was-divided)
 
-[5 How the pair testing was managed and team work/effort was
-divided	1](#_Toc439194681)
+[6 Difficulties encountered, challenges overcome, and lessons learned](#Difficulties-encountered,-challenges-overcome,-and-lessons-learned)
 
-[6 Difficulties encountered, challenges overcome, and lessons
-learned	1](#_Toc439194682)
-
-[7 Comments/feedback on the lab and lab document itself	1](#_Toc439194683)
+[7 Comments/feedback on the lab and lab document itself](#Comments/feedback-on-the-lab-and-lab-document-itself)
 
 # Introduction
 
