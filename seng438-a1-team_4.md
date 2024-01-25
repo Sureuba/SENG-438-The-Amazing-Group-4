@@ -33,7 +33,17 @@ functional testing before this lab
 
 # High-level description of the exploratory testing plan
 
-Text…
+The aim of exploratory testing is to create "realistic" scenarios that cases the software to succeed or fail it's operation. Since this is an ATM machine, we will simulate a typical user interaction with the ATM machine.
+
+The main scenario consists of **Withdraw, Deposit, Transfer, and Balance Inquiry**. We will test the four functions with the two different cards provided.
+
+For every action, we will also try to cancel the transaction whenever we make a selection and test if the system responds accordingly. Some additional exploratory testing also includes trying to enter the incorrect card number or PIN to see the response. For example:
+
+Scenario 1: User uses **Card 1** to **Withdraw** from **Checking**.<br />
+Scenario 2: User uses **Card 1** to **Withdraw** from **Saving**.<br />
+etc...
+
+This testing method should be comprehensive enough and will reach most functions for the ATM machine.
 
 # Comparison of exploratory and manual functional testing
 
