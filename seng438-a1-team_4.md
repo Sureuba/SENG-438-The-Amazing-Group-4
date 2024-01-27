@@ -20,11 +20,11 @@
 
 [4 Notes and discussion of the peer reviews of defect reports](#Notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
-[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-and-team-work/effort-was-divided)
+[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-and-team-workeffort-was-divided)
 
-[6 Difficulties encountered, challenges overcome, and lessons learned](#Difficulties-encountered,-challenges-overcome,-and-lessons-learned)
+[6 Difficulties encountered, challenges overcome, and lessons learned](#Difficulties-encountered-challenges-overcome-and-lessons-learned)
 
-[7 Comments/feedback on the lab and lab document itself](#Comments/feedback-on-the-lab-and-lab-document-itself)
+[7 Comments/feedback on the lab and lab document itself](#Commentsfeedback-on-the-lab-and-lab-document-itself)
 
 # Introduction
 
