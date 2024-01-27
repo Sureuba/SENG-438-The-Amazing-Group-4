@@ -39,11 +39,11 @@ The main scenario consists of **Withdraw, Deposit, Transfer, and Balance Inquiry
 
 For every action, we will also try to cancel the transaction whenever we make a selection and test if the system responds accordingly. Some additional exploratory testing also includes trying to enter the incorrect card number or PIN to see the response. For example:
 
-Scenario 1: User uses **Card 1** to **Withdraw** from **Checking**.<br />
-Scenario 2: User uses **Card 1** to **Withdraw** from **Saving**.<br />
+Scenario 1: User uses **Card 1** to **Withdraw** from **Checking**.<br>
+Scenario 2: User uses **Card 1** to **Withdraw** from **Saving**.<br>
 etc...
 
-This testing method should be comprehensive enough and will reach most functions for the ATM machine.
+This testing method should be comprehensive enough and will reach most functions for the ATM machine. The ATM machine has sufficient cash in the cash dispenser so that it should allow users to complete all types of transactions. Since in the real world, it is very rare that an ATM machine does not have enough cash for a withdraw operation. 
 
 # Comparison of exploratory and manual functional testing
 
@@ -54,7 +54,11 @@ Text…
 
 # Notes and discussion of the peer reviews of defect reports
 
-Text…
+The group was divided up into 2 teams. Team 1 consists of Uruba Alam and Naina Gupta, team 2 consists of Ding Kai Wu and Chuhang Qi.
+
+Both teams had similar results from exploratory testing and scripted testing. This is because the SUT is a relatively simple system. All the main functions and different selection branches can be tested for bugs easily. Team 1 reported less bugs than team 2. This is because their report has a different format than team 2's. For example team 2 used 2 different bug reports for *incorrect amount withdrawn from saving* and *incorrect amount withdrawn from checking*, while team 1 reported this as one issue. Team 2's report also provided more details than team 1's. However, there are some small details that team 2 missed. For example, the incorrect spelling of *Wood you like to do another transaction?* rather than *Would you like to do another transaction?*
+
+Overall, the 2 pairs approach allowed us to double check other's work and fill in details that one pair might have missed during their testing phase. Combining the defect reports together allowed us to generate a more complete report.
 
 # How the pair testing was managed and team work/effort was divided 
 
@@ -62,7 +66,7 @@ Text…
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+The main difficulty as it comes to testing is to understand how the SUT is supposed to work. Even though this is a small system it still took us some time to figure out all the different operations we can perform. Some operations did not return the expected results and we had to figure out if it is an indented interaction or a bug. Another challenge is the use of a bug tracking software. We are unfamiliar with any issue tracking system so we chose Atlassian Jira. How to setup the project and report a bug also took some getting used to. We learned that a proper testing procedure and bug tracking software is crucial to a successful software development cycle. Without them a bug can be missed or reported multiple times, and sit on a backlog of problems that might not get fixed for a long time.
 
 # Comments/feedback on the lab and lab document itself
 
