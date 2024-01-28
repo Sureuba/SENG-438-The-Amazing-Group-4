@@ -20,7 +20,7 @@
 
 [4 Notes and discussion of the peer reviews of defect reports](#Notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
-[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-&-team-workeffort-was-divided)
+[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-&-lessons-learned-from-teamwork)
 
 [6 Difficulties encountered, challenges overcome, and lessons learned](#Difficulties-encountered-challenges-overcome-and-lessons-learned)
 
