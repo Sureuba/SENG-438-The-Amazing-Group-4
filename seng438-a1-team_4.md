@@ -28,8 +28,7 @@
 
 # Introduction
 
-An introduction of your lab work, and what you knew about exploratory and manual
-functional testing before this lab
+In this lab, we tested an Automated Machine Teller (ATM) application. We were given 2 versions of the application. Version 1.0 was the the version with a lot of bugs and issues which we conducted two types of tests on: Exploraroty testing and Manual Functional testing. Version 1.1 was the corrected version where some issues were resolved from 1.1 but not all, in this we used the method of regression testing to retest the system after it had been modified. Before starting this lab, we had assumed exploratory testing was exploring new methods of testing on the application, and manual functional testing was going through the functional requirements of the application and heavily testing the funcationalities. Before this lab, we were not sure about the exact differences of the two methods, or how each testing method was going to be exectued. Before this lab, we had a very vague understanding of exploraroty and manual tests. We did not know how in depth these tests actually were and how effective they can be. Having now Completed this lab, we have a completely different understanding of exploraroty and manual fucntional testing, and now know the true advantages of executing different testing methodologies. 
 
 # High-level description of the exploratory testing plan
 
