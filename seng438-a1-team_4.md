@@ -20,7 +20,7 @@
 
 [4 Notes and discussion of the peer reviews of defect reports](#Notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
-[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-&-lessons-learned-from-teamwork)
+[5 How the pair testing was managed and team work/effort was divided](#How-the-pair-testing-was-managed-and-lessons-learned-from-teamwork)
 
 [6 Difficulties encountered, challenges overcome, and lessons learned](#Difficulties-encountered-challenges-overcome-and-lessons-learned)
 
@@ -68,7 +68,7 @@ Both teams had similar results from exploratory testing and scripted testing. Th
 
 Overall, the 2 pairs approach allowed us to double-check other's work and fill in details that one pair might have missed during their testing phase. Combining the defect reports together allowed us to generate a more complete report.
 
-# How the pair testing was managed & lessons learned from teamwork
+# How the pair testing was managed and lessons learned from teamwork
 
 In order to tackle pair programming, our group decided we would have both pairs test the same program separately in order to find the maximum amount of defects. Within the pair testing, one member was responsible for running the simulation and finding the bugs on their laptop by executing different tests (exploratory and manual), while the other member was responsible for recording these issues on Jira. This method was both efficient and productive for our group. While doing exploratory tests, our group's strategy was to test each and every functionality and try different values in order to find all possible defects. Through utilizing the strategy of pair programming, we learned that it is an efficient way of testing, and allows each team member to learn from one another. Having two pairs of programmers testing the same application also ensured that bugs were less likely to be missed. We have learned that teamwork and collaboration are important parts of software testing and it ensure that maximum productivity is achieved.  
 
