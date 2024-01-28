@@ -78,4 +78,4 @@ The main difficulty as it comes to testing is to understand how the SUT is suppo
 
 # Comments/feedback on the lab and lab document itself
 
-Text…
+This lab was a great way to learn about testing. It allowed us to learn how to use Jira which we now know is a very effective tool for bug tracking. The knowledge gained from this lab is valuable and is something we will cary forward in our careers as software developers. Testing is a skill and a big aspect of being a software engineer, and by learning about exploratory, manual functional, and regression testing; methods commonly used in the industry, we can effectlively test our own application we make in the future. Pair programming was also a new skill we learned in this lab, and found that it's a very effective and productive way to test code. All in all, we enjoyed this lab and have learned new skills from it that will help us in the future as software engineers. 
