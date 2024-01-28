@@ -62,7 +62,7 @@ Overall, the 2 pairs approach allowed us to double check other's work and fill i
 
 # How the pair testing was managed and team work/effort was divided 
 
-Text…
+In order to tackle pair programming, our group decided we would have both pairs test the same program seperately in order to find the maximum amount of defects. Within the pair testing, one member was responsible for running the simulation and finding the bugs on their laptop by executing different tests (exploaratory and manual), while the other member was repsosible for recording these issues on Jira. This method was both effiecent and productive for our group. While doing exploraroty tests, our group's strategy was to test each and every functionality and try different values in order to find all possible defects. 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
