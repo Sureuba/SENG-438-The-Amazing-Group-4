@@ -67,9 +67,9 @@ Both teams had similar results from exploratory testing and scripted testing. Th
 
 Overall, the 2 pairs approach allowed us to double check other's work and fill in details that one pair might have missed during their testing phase. Combining the defect reports together allowed us to generate a more complete report.
 
-# How the pair testing was managed and team work/effort was divided 
+# How the pair testing was managed and team work/effort was divided & lessons learned from teamwork
 
-In order to tackle pair programming, our group decided we would have both pairs test the same program seperately in order to find the maximum amount of defects. Within the pair testing, one member was responsible for running the simulation and finding the bugs on their laptop by executing different tests (exploaratory and manual), while the other member was repsosible for recording these issues on Jira. This method was both effiecent and productive for our group. While doing exploraroty tests, our group's strategy was to test each and every functionality and try different values in order to find all possible defects. 
+In order to tackle pair programming, our group decided we would have both pairs test the same program seperately in order to find the maximum amount of defects. Within the pair testing, one member was responsible for running the simulation and finding the bugs on their laptop by executing different tests (exploaratory and manual), while the other member was repsosible for recording these issues on Jira. This method was both effiecent and productive for our group. While doing exploraroty tests, our group's strategy was to test each and every functionality and try different values in order to find all possible defects. Through utilizing the strategy of pair programming, we learned that it is a effecient way of testing, and allows each team member to learn from one another. We have learnt that teamwork and collaboration is an important part of software testing and it ensures that maxiumum productivity & efficiency is achieved.  
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
