@@ -4,10 +4,10 @@
 
 | Group: 4      |
 |-----------------|
-| Student 1 Uruba Alam                |   
-| Student 2 Naina Gupta              |   
-| Student 3 Ding Kai Wu               |   
-| Student 4 Chuhang Qi                |   
+| Student 1 Uruba                 |   
+| Student 2 Naina               |   
+| Student 3 Ding Kai               |   
+| Student 4 Chuhang              |   
 
 
 **Table of Contents**
