@@ -73,6 +73,22 @@ public class DataUtilitiesTest extends DataUtilities {
 		double result = DataUtilities.calculateColumnTotal(values, 0);
 		assertEquals(0, result, .000000001d);
 	}
+	
+	@Test
+	public void calculateColumnTotalMinMaxTest() {
+		mockery.checking(new Expectations() {
+			{
+				one(values).getRowCount();
+				will(returnValue(2));
+				one(values).getValue(0, 0);
+				will(returnValue(Double.MIN_VALUE));
+				one(values).getValue(1, 0);
+				will(returnValue(Double.MAX_VALUE));
+			}
+		});
+		double result = DataUtilities.calculateColumnTotal(values, 0);
+		assertEquals(Double.MIN_VALUE + Double.MAX_VALUE, result, .000000001d);
+	}
 
 	@Test
 	public void calculateColumnTotalNullTest() {
@@ -106,6 +122,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result, .000000001d);
 	}
 
+	// calculates the column total of the second column
 	@Test
 	public void calculateColumnTotalColumnOneTest() {
 		mockery.checking(new Expectations() {
@@ -193,6 +210,22 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result, .000000001d);
 	}
 
+	@Test
+	public void calculateRowMinMaxTest() {
+		mockery.checking(new Expectations() {
+			{
+				one(values).getColumnCount();
+				will(returnValue(2));
+				one(values).getValue(0, 0);
+				will(returnValue(Double.MIN_VALUE));
+				one(values).getValue(0, 1);
+				will(returnValue(Double.MAX_VALUE));
+			}
+		});
+		double result = DataUtilities.calculateRowTotal(values, 0);
+		assertEquals(Double.MIN_VALUE + Double.MAX_VALUE, result, .000000001d);
+	}
+	
 	@Test
 	public void calculateRowTotalNullTest() {
 		mockery.checking(new Expectations() {
@@ -295,6 +328,18 @@ public class DataUtilitiesTest extends DataUtilities {
 			assertEquals(data[i], result[i].doubleValue(), .000000001d);
 		}
 	}
+	
+	@Test
+	public void createNumberArrayMinMaxTest() {
+		double[] data = { Double.MAX_VALUE, Double.MIN_VALUE, Double.MIN_VALUE, Double.MAX_VALUE };
+		Number[] result = DataUtilities.createNumberArray(data);
+
+		assertEquals(data.length, result.length);
+
+		for (int i = 0; i < data.length; i++) {
+			assertEquals(data[i], result[i].doubleValue(), .000000001d);
+		}
+	}
 
 	@Test
 	public void createNumberArray2DTest() {
@@ -384,6 +429,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result.getItemCount());
 	}
 	
+	// the cumulative percentage of 0 should be 0%
 	@Test
 	public void getCumulativePercentagesZeroTest() {
 		mockery.checking(new Expectations() {
@@ -417,6 +463,29 @@ public class DataUtilitiesTest extends DataUtilities {
 				will(returnValue(0));
 				allowing(keyedValues).getValue(1);
 				will(returnValue(123.5));
+				allowing(keyedValues).getKey(0);
+				will(returnValue(0));
+				allowing(keyedValues).getKey(1);
+				will(returnValue(1));
+			}
+		});
+
+		KeyedValues result = DataUtilities.getCumulativePercentages(keyedValues);
+
+		assertEquals(0.0, result.getValue(0));
+		assertEquals(1.0, result.getValue(1));
+	}
+	
+	@Test
+	public void getCumulativePercentagesMinMaxTest() {
+		mockery.checking(new Expectations() {
+			{
+				allowing(keyedValues).getItemCount();
+				will(returnValue(2));
+				allowing(keyedValues).getValue(0);
+				will(returnValue(0));
+				allowing(keyedValues).getValue(1);
+				will(returnValue(Double.MAX_VALUE));
 				allowing(keyedValues).getKey(0);
 				will(returnValue(0));
 				allowing(keyedValues).getKey(1);
