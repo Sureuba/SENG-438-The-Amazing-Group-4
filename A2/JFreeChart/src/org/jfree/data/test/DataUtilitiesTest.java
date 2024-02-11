@@ -26,6 +26,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		keyedValues = mockery.mock(KeyedValues.class);
 	}
 
+	// this test covers normal values for variable data and column
 	@Test
 	public void calculateColumnTotalTest() {
 		mockery.checking(new Expectations() {
@@ -41,7 +42,8 @@ public class DataUtilitiesTest extends DataUtilities {
 		double result = DataUtilities.calculateColumnTotal(values, 0);
 		assertEquals(10.0, result, .000000001d);
 	}
-
+	
+	// this test covers normal values for variable data and column
 	@Test
 	public void calculateColumnTotalNegativeTest() {
 		mockery.checking(new Expectations() {
@@ -58,6 +60,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(-15, result, .000000001d);
 	}
 
+	// this test covers normal values for variable data and column
 	@Test
 	public void calculateColumnTotalZeroTest() {
 		mockery.checking(new Expectations() {
@@ -74,6 +77,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result, .000000001d);
 	}
 	
+	// this test covers invalid values for variable data and normal values for column
 	@Test
 	public void calculateColumnTotalNullTest() {
 		mockery.checking(new Expectations() {
@@ -90,6 +94,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result, .000000001d);
 	}
 	
+	// this test covers invalid values for variable data and normal values for column
 	@Test(expected = InvalidParameterException.class)
 	public void calculateColumnTotalExceptionTest() {
 		mockery.checking(new Expectations() {
@@ -105,6 +110,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		DataUtilities.calculateColumnTotal(values, 0);
 	}
 	
+	// this test covers maximum and minimum values for variable data and normal values for column
 	@Test
 	public void calculateColumnTotalMinMaxTest() {
 		mockery.checking(new Expectations() {
@@ -122,6 +128,7 @@ public class DataUtilitiesTest extends DataUtilities {
 	}
 
 	// calculates the column total of the second column
+	// this test covers normal values for variable data and column
 	@Test
 	public void calculateColumnTotalColumnOneTest() {
 		mockery.checking(new Expectations() {
@@ -146,6 +153,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(13.5, result, .000000001d);
 	}
 
+	// this test covers normal values for variable data and row
 	@Test
 	public void calculateRowTotalTest() {
 		mockery.checking(new Expectations() {
@@ -162,6 +170,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(10.0, result, .000000001d);
 	}
 
+	// this test covers normal values for variable data and row
 	@Test
 	public void calculateRowTotalNegativeTest() {
 		mockery.checking(new Expectations() {
@@ -178,6 +187,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(-15, result, .000000001d);
 	}
 
+	// this test covers normal values for variable data and row
 	@Test
 	public void calculateRowTotalZeroTest() {
 		mockery.checking(new Expectations() {
@@ -194,6 +204,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result, .000000001d);
 	}
 	
+	// this test covers invalid values for variable data and normal values for row
 	@Test
 	public void calculateRowTotalNullTest() {
 		mockery.checking(new Expectations() {
@@ -210,6 +221,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result, .000000001d);
 	}
 	
+	// this test covers invalid values for variable data and normal values for row
 	@Test(expected = InvalidParameterException.class)
 	public void calculateRowTotalExceptionTest() {
 		mockery.checking(new Expectations() {
@@ -225,6 +237,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		DataUtilities.calculateRowTotal(values, 0);
 	}
 
+	// this test covers maximum and minimum values for variable data and normal values for row
 	@Test
 	public void calculateRowMinMaxTest() {
 		mockery.checking(new Expectations() {
@@ -241,6 +254,8 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(Double.MIN_VALUE + Double.MAX_VALUE, result, .000000001d);
 	}
 
+	// calculates the column total of the second row
+	// this test covers normal values for variable data and row
 	@Test
 	public void calculateRowTotalRowOneTest() {
 		mockery.checking(new Expectations() {
@@ -259,6 +274,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(4.0, result, .000000001d);
 	}
 
+	// this test covers normal values for variable data
 	@Test
 	public void createNumberArrayTest() {
 		double[] data = { 1.0, 2.5, -3.5, 4.5, 0.0 };
@@ -271,6 +287,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		}
 	}
 
+	// this test covers empty values for variable data
 	@Test
 	public void createNumberArrayEmptyTest() {
 		double[] data = {};
@@ -279,12 +296,14 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result.length);
 	}
 
+	// this test covers invalid values for variable data
 	@Test(expected = InvalidParameterException.class)
 	public void createNumberArrayNullTest() {
 		double[] data = null;
 		DataUtilities.createNumberArray(data);
 	}
 	
+	// this test covers maximum and minimum values for variable data
 	@Test
 	public void createNumberArrayMinMaxTest() {
 		double[] data = { Double.MAX_VALUE, Double.MIN_VALUE, Double.MIN_VALUE, Double.MAX_VALUE };
@@ -296,7 +315,8 @@ public class DataUtilitiesTest extends DataUtilities {
 			assertEquals(data[i], result[i].doubleValue(), .000000001d);
 		}
 	}
-
+	
+	// this test covers normal values for variable data
 	@Test
 	public void createNumberArray2DTest() {
 		double[][] data = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } };
@@ -314,6 +334,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		}
 	}
 
+	// this test covers empty values for variable data
 	@Test
 	public void createNumberArray2DEmptyTest() {
 		double[][] data = {};
@@ -322,12 +343,14 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0, result.length);
 	}
 
+	// this test covers invalid values for variable data
 	@Test(expected = InvalidParameterException.class)
 	public void createNumberArray2DNullTest() {
 		double[][] data = null;
 		DataUtilities.createNumberArray2D(data);
 	}
 	
+	// this test covers maximum and minimum values for variable data
 	@Test
 	public void createNumberArray2DMinMaxTest() {
 		double[][] data = { { Double.MAX_VALUE, Double.MIN_VALUE, Double.MIN_VALUE, Double.MAX_VALUE },
@@ -346,6 +369,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		}
 	}
 
+	// this test covers normal values for variable data
 	@Test
 	public void getCumulativePercentagesTest() {
 		mockery.checking(new Expectations() {
@@ -374,6 +398,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(1.0, result.getValue(2));
 	}
 	
+	// this test covers empty values for variable data
 	@Test
 	public void getCumulativePercentagesEmptyTest() {
 		mockery.checking(new Expectations() {
@@ -389,6 +414,7 @@ public class DataUtilitiesTest extends DataUtilities {
 	}
 	
 	// the cumulative percentage of 0 should be 0%
+	// this test covers normal values for variable data
 	@Test
 	public void getCumulativePercentagesZeroTest() {
 		mockery.checking(new Expectations() {
@@ -412,6 +438,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertEquals(0.0, result.getValue(1));
 	}
 
+	// this test covers invalid values for variable data
 	@Test(expected = InvalidParameterException.class)
 	public void getCumulativePercentagesNullTest() {
 		mockery.checking(new Expectations() {
@@ -425,6 +452,7 @@ public class DataUtilitiesTest extends DataUtilities {
 
 	}
 	
+	// this test covers invalid values for variable data
 	@Test(expected = InvalidParameterException.class)
 	public void getCumulativePercentagesExceptionTest() {
 		mockery.checking(new Expectations() {
@@ -446,6 +474,7 @@ public class DataUtilitiesTest extends DataUtilities {
 
 	}
 	
+	// this test covers maximum and minimum values for variable data
 	@Test
 	public void getCumulativePercentagesMinMaxTest() {
 		mockery.checking(new Expectations() {

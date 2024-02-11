@@ -12,9 +12,13 @@ public class RangeTest {
 	
     @Before
     public void setUp() throws Exception {
+    	// this test covers normal values for variable positiveRange
     	positiveRange = new Range(4, 6);
+    	// this test covers normal values for variable negativeRange
     	negativeRange = new Range(-8, -4);
+    	// this test covers normal values for variable zeroRange
     	zeroRange = new Range(0, 0);
+    	// this test covers maximum and minimum values for variable minMaxRange
     	minMaxRange = new Range(Double.MIN_VALUE, Double.MAX_VALUE);
     }
     
@@ -90,52 +94,62 @@ public class RangeTest {
     			Double.MIN_VALUE, minMaxRange.getLowerBound(), .000000001d);
     }
     
+    // this test covers normal values for variable value
     @Test
     public void containsPositiveTest() {
     	assertTrue("Value 5 is within 4 and 6",  positiveRange.contains(5));
     }
     
+    // this test covers normal values for variable value
     @Test
     public void containsNegativeTest() {
     	assertTrue("Value -6 is within -8 and -4",  negativeRange.contains(-6));
     }
     
+    // this test covers normal values for variable value
     @Test
     public void containsZeroTest() {
     	assertTrue("Value 0 is within 0 and 0",  zeroRange.contains(0));
     }
     
+    // this test covers maximum and minimum values for variable value
     @Test
     public void containsMinMaxTest() {
     	assertTrue("Value " + Double.MIN_VALUE + " is within " + Double.MIN_VALUE + " and " + Double.MAX_VALUE,  minMaxRange.contains(Double.MIN_VALUE));
     	assertTrue("Value " + Double.MAX_VALUE + " is within " + Double.MIN_VALUE + " and " + Double.MAX_VALUE,  minMaxRange.contains(Double.MAX_VALUE));
     }
     
+    // this test covers maximum values for variable value
     @Test
     public void containsAUBTest() {
     	assertFalse("Value 7 is not within 4 and 6",  positiveRange.contains(7));
     }
     
+    // this test covers minimum values for variable value
     @Test
     public void containsBLBTest() {
     	assertFalse("Value -9 is not within -8 and -4",  negativeRange.contains(-9));
     }
     
+    // this test covers normal values for variable value
     @Test
     public void constrainPositiveTest() {
     	assertEquals("The closed value from (4, 6) to 6 is 6", 6, positiveRange.constrain(6), .000000001d);
     }
     
+    // this test covers normal values for variable value
     @Test
     public void constrainNegativeTest() {
     	assertEquals("The closed value from (-8, -4) to -8 is -8", -8, negativeRange.constrain(-8), .000000001d);
     }
     
+    // this test covers normal values for variable value
     @Test
     public void constrainZeroTest() {
     	assertEquals("The closed value from (0, 0) to 0 is 0", 0, zeroRange.constrain(0), .000000001d);
     }
     
+    // this test covers maximum and minimum values for variable value
     @Test
     public void constrainMinMaxTest() {
     	assertEquals("The closed value from (" + Double.MIN_VALUE + ", " +  Double.MAX_VALUE + ") to " + Double.MAX_VALUE + " is " + Double.MAX_VALUE,
@@ -144,11 +158,13 @@ public class RangeTest {
     			Double.MIN_VALUE, minMaxRange.constrain(Double.MIN_VALUE), .000000001d);
     }
     
+    // this test covers maximum values for variable value
     @Test
     public void constrainAUBTest() {
     	assertEquals("The closed value from (4, 6) to 7 is 6", 6, positiveRange.constrain(6), .000000001d);
     }
     
+    // this test covers minimum values for variable value
     @Test
     public void constrainBLBTest() {
     	assertEquals("The closed value from (-8, -4) to -9 is -8", -8, negativeRange.constrain(-8), .000000001d);
