@@ -40,7 +40,7 @@ public class RangeTest {
     }
     @Test
     public void centralValueShouldBeNegative() {
-    	assertEquals("The central value of 0 and 10 should be -5",
+    	assertEquals("The central value of -10 and 0 should be -5",
     	        -5, exRange4.getCentralValue(), .000000001d);
     }
 
@@ -50,7 +50,7 @@ public class RangeTest {
     @Test
     public void containsZeroValue() {assertTrue(exRange.contains(0)); }
     @Test
-    public void containsNegariveValue() {assertTrue(exRange4.contains(-6)); }
+    public void containsNegativeValue() {assertTrue(exRange4.contains(-6)); }
     @Test
     public void containsPositiveValue() {assertTrue(exRange2.contains(5)); }
     @Test
@@ -105,7 +105,7 @@ public class RangeTest {
     	assertEquals("The upper bound in range -10 to 0 is 0", 
     			0, exRange4.getUpperBound(), .000000001d);
     }
-    //Testing Constrain Function *******************************************************************************
+    //Testing getLowerBound() Function *******************************************************************************
     
     @Test
     public void getLowerBoundPositiveValue() {
@@ -122,11 +122,19 @@ public class RangeTest {
     	assertEquals("The lower bound in range 0 to 10 is 0",
     	        0, exRange2.getLowerBound(), .000000001d);
     }
+    
     @After
     public void tearDown() throws Exception {
+    	 exRange = null;
+    	 exRange2 = null;
+    	 exRange3 = null;
+    	 exRange4 = null;
+    	 exRange5 = null;
     }
 
     @AfterClass
     public static void tearDownAfterClass() throws Exception {
+    	System.out.println("All Range Testing Completed!");
     }
+    
 }
