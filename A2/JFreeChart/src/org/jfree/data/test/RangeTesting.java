@@ -8,6 +8,7 @@ public class RangeTest {
     private Range exRange3;
     private Range exRange4;
     private Range exRange5;
+    private Range minMaxRange;
     
     @BeforeClass 
     public static void setUpBeforeClass() throws Exception {
@@ -15,11 +16,24 @@ public class RangeTest {
 
     @Before
     public void setUp() throws Exception { 
+    	//negative to positive ranges
     	exRange = new Range(-1, 1);
+    	
+    	//zero to positive ranges
     	exRange2 = new Range(0, 10);
+    	
+    	//completely positive ranges
     	exRange3 = new Range(1, 10);
+    	
+    	//zero to negative range
     	exRange4 = new Range(-10, 0);
+    	
+    	//completely negative ranges
     	exRange5 = new Range(-50, -10);
+    	
+    	//min and max range values
+    	minMaxRange = new Range(Double.MIN_VALUE, Double.MAX_VALUE);
+    	
     }
 
     //Test getCentralValue() function ******************************************************************************************
@@ -43,21 +57,37 @@ public class RangeTest {
     	assertEquals("The central value of -10 and 0 should be -5",
     	        -5, exRange4.getCentralValue(), .000000001d);
     }
+    @Test
+    public void getCentralValueMinMaxTest() {
+    	double medium = (Double.MAX_VALUE + Double.MIN_VALUE)/2;
+        assertEquals("The central value of MIN_VALUE and MIN_VALUE should be " + medium,
+        		medium, minMaxRange.getCentralValue(), .000000001d);
+    }
 
     //Testing contains() function *******************************************************************************
     @Test
     public void containsEdgeValue() {assertTrue(exRange.contains(-1)); }
+    
     @Test
     public void containsZeroValue() {assertTrue(exRange.contains(0)); }
+    
     @Test
     public void containsNegativeValue() {assertTrue(exRange4.contains(-6)); }
+    
     @Test
     public void containsPositiveValue() {assertTrue(exRange2.contains(5)); }
+    
     @Test
     public void doesntContainAboveUpperBound() {assertFalse(exRange2.contains(11));	}
+    
     @Test
     public void doesntContainBelowLowerBound() {assertFalse(exRange2.contains(-2)); }
-
+    
+    @Test
+    public void containsMinMaxTest() {
+    	assertTrue("Value " + Double.MIN_VALUE + " is within " + Double.MIN_VALUE + " and " + Double.MAX_VALUE,  minMaxRange.contains(Double.MIN_VALUE));
+    	assertTrue("Value " + Double.MAX_VALUE + " is within " + Double.MIN_VALUE + " and " + Double.MAX_VALUE,  minMaxRange.contains(Double.MAX_VALUE));
+    }
     //Testing constrain() Function *******************************************************************************        
     
     @Test
@@ -89,6 +119,14 @@ public class RangeTest {
     	        0, exRange2.constrain(-50), .000000001d);
     }
     
+    @Test
+    public void constrainMinMaxTest() {
+    	assertEquals("The closed value from (" + Double.MIN_VALUE + ", " +  Double.MAX_VALUE + ") to " + Double.MAX_VALUE + " is " + Double.MAX_VALUE,
+    			Double.MAX_VALUE, minMaxRange.constrain(Double.MAX_VALUE), .000000001d);
+    	assertEquals("The closed value from (" + Double.MIN_VALUE + ", " +  Double.MAX_VALUE + ") to " + Double.MIN_VALUE + " is " + Double.MIN_VALUE,
+    			Double.MIN_VALUE, minMaxRange.constrain(Double.MIN_VALUE), .000000001d);
+    }
+    
     //Testing double getUpperBound() Function *******************************************************************************
     @Test
     public void getUpperBoundPositiveValue() {
@@ -104,6 +142,11 @@ public class RangeTest {
     public void getUpperBoundZeroValue() { 
     	assertEquals("The upper bound in range -10 to 0 is 0", 
     			0, exRange4.getUpperBound(), .000000001d);
+    }
+    @Test
+    public void getUpperBoundMinMaxTest() {
+    	assertEquals("The upperbound of MIN_VALUE and MIN_VALUE should be " + Double.MAX_VALUE, 
+    			Double.MAX_VALUE, minMaxRange.getUpperBound(), .000000001d);
     }
     //Testing getLowerBound() Function *******************************************************************************
     
@@ -121,6 +164,11 @@ public class RangeTest {
     public void getLowerBoundZeroValue() {
     	assertEquals("The lower bound in range 0 to 10 is 0",
     	        0, exRange2.getLowerBound(), .000000001d);
+    }
+    @Test
+    public void getLowerBoundMinMaxTest() {
+    	assertEquals("The lowerbound of MIN_VALUE and MIN_VALUE should be " + Double.MIN_VALUE, 
+    			Double.MIN_VALUE, minMaxRange.getLowerBound(), .000000001d);
     }
     
     @After
