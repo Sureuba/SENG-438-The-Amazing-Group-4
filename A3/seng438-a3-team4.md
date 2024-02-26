@@ -4,10 +4,10 @@
 
 | Group \#:      |     |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Student Names: |  Uruba Alam   |
+|                |   Naina Gupta  |
+|                |   Bill  |
+|                |    Chuhang |
 
 (Note that some labs require individual reports while others require one report
 for each group. Please see each lab document for details.)
