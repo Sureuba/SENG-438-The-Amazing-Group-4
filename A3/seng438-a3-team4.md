@@ -18,7 +18,73 @@ Text…
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+## DataUtilities.calculateColumnTotal
+
+**Data Flow Graph**
+
+![alt text](DFG.png)
+
+**Def-Use Sets**
+
+| calculateColumnTotal |
+| --- |
+| def(1) = {data, column, total} <br> use(1) = {data} |
+| def(2) = {total, rowCount} <br> use(2) = {data} |
+| def(3) = {r} <br> use(3) = {r, rowCount} |
+| def(4) = {n} <br> use(4) = {data, n} |
+| def(5) = {} <br> use(5) = {total, n} |
+| def(6) = {r2} <br> use(6) = {r2, rowCount} |
+| def(7) = {n} <br> use(7) = {data, n} |
+| def(8) = {} <br> use(8) = {total, n} |
+| def(9) = {} <br> use(9) = {total} |
+
+**DU-Pairs**
+
+| calculateColumnTotal |
+| --- |
+| du(1, 1, data) = {1} |
+| du(1, 2, data) = {1, 2} |
+| du(1, 4, data) = {1, 2, 3, 4} |
+| du(1, 7, data) = {unreachable} |
+| du(3, 3, r) = {3} |
+| du(2, 3, rowCount) = {2, 3} |
+| du(2, 6, rowCount) = {2, 3, 6} |
+| du(4, 4, n) = {4} |
+| du(4, 5, n) = {4, 5} |
+| du(7, 7, n) = {unreachable} |
+| du(7, 8, n) = {unreachable} |
+| du(1, 5, total) = {1, 2, 3, 4, 5} |
+| du(1, 8, total) = {unreachable} |
+| du(1, 9, total) = {1, 2, 3, 6, 9}, {1, 9} |
+
+**Parts Covered**
+
+| Test Case | Parts Covered |
+| --- | --- |
+| calculateColumnTotalTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+| calculateColumnTotalNegativeTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+| calculateColumnTotalZeroTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+| calculateColumnTotalNullTest | du(1, 9, total) |
+| calculateColumnTotalExceptionTest | du(1, 9, total) |
+| calculateColumnTotalMinMaxTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+| calculateColumnTotalColumnOneTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+
+**DU-Pair Coverage**
+
+TR for data = 3 paths <br>
+Test paths = 3 paths
+
+TR for r = 1 path <br>
+Test paths = 1 path
+
+TR for rowCount = 2 paths <br>
+Test paths = 2 paths
+
+TR for n = 2 paths <br>
+Test paths = 2 paths
+
+TR for total = 3 paths <br>
+Test paths = 3 paths
 
 # 3 A detailed description of the testing strategy for the new unit test
 
