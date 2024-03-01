@@ -4,10 +4,10 @@
 
 | Group \#:      |     |
 | -------------- | --- |
-| Student Names: |  Uruba Alam   |
-|                |   Naina Gupta  |
-|                |   Bill  |
-|                |    Chuhang |
+| Student Names: | Uruba Alam |
+|                | Naina Gupta |
+|                | Ding Kai Wu |
+|                | Chuhang Qi |
 
 (Note that some labs require individual reports while others require one report
 for each group. Please see each lab document for details.)
@@ -45,16 +45,16 @@ Text…
 | du(1, 1, data) = {1} |
 | du(1, 2, data) = {1, 2} |
 | du(1, 4, data) = {1, 2, 3, 4} |
-| du(1, 7, data) = {unreachable} |
+| du(1, 7, data) = {1, 2, 3, 6, 7} |
 | du(3, 3, r) = {3} |
 | du(2, 3, rowCount) = {2, 3} |
 | du(2, 6, rowCount) = {2, 3, 6} |
 | du(4, 4, n) = {4} |
 | du(4, 5, n) = {4, 5} |
-| du(7, 7, n) = {unreachable} |
-| du(7, 8, n) = {unreachable} |
+| du(7, 7, n) = {7} |
+| du(7, 8, n) = {7, 8} |
 | du(1, 5, total) = {1, 2, 3, 4, 5} |
-| du(1, 8, total) = {unreachable} |
+| du(1, 8, total) = {1, 2, 3, 4, 5, 6, 7, 8} |
 | du(1, 9, total) = {1, 2, 3, 6, 9}, {1, 9} |
 
 **Parts Covered**
@@ -71,20 +71,29 @@ Text…
 
 **DU-Pair Coverage**
 
-TR for data = 3 paths <br>
-Test paths = 3 paths
+TR for data = 4 paths <br>
+Test paths = 3 paths <br>
+Coverage = 75%
 
 TR for r = 1 path <br>
-Test paths = 1 path
+Test paths = 1 path <br>
+Coverage = 100%
 
 TR for rowCount = 2 paths <br>
-Test paths = 2 paths
+Test paths = 2 paths <br>
+Coverage = 100%
 
 TR for n = 2 paths <br>
-Test paths = 2 paths
+Test paths = 2 paths <br>
+Coverage = 100%
+
+TR for n = 2 paths <br>
+Test paths = 0 paths <br>
+Coverage = 0%
 
 TR for total = 3 paths <br>
-Test paths = 3 paths
+Test paths = 3 paths <br>
+Coverage = 100%
 
 # 3 A detailed description of the testing strategy for the new unit test
 
