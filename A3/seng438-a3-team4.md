@@ -54,46 +54,49 @@ Text…
 | du(7, 7, n) = {7} |
 | du(7, 8, n) = {7, 8} |
 | du(1, 5, total) = {1, 2, 3, 4, 5} |
+| du(5, 5, total) = {5} |
 | du(1, 8, total) = {1, 2, 3, 4, 5, 6, 7, 8} |
+| du(8, 8, total) = {8} |
 | du(1, 9, total) = {1, 2, 3, 6, 9}, {1, 9} |
+| du(5, 8, total) = {5, 3, 6, 7, 8} |
+| du(5, 9, total) = {5, 3, 6, 9} |
+| du(8, 9, total) = {8, 6, 9} |
 
 **Parts Covered**
 
 | Test Case | Parts Covered |
 | --- | --- |
-| calculateColumnTotalTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
-| calculateColumnTotalNegativeTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
-| calculateColumnTotalZeroTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+| calculateColumnTotalTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
+| calculateColumnTotalNegativeTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
+| calculateColumnTotalZeroTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
 | calculateColumnTotalNullTest | du(1, 9, total) |
 | calculateColumnTotalExceptionTest | du(1, 9, total) |
-| calculateColumnTotalMinMaxTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
-| calculateColumnTotalColumnOneTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(2, 5, total), du(1, 9, total) |
+| calculateColumnTotalMinMaxTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
+| calculateColumnTotalColumnOneTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
 
 **DU-Pair Coverage**
 
-TR for data = 4 paths <br>
+*excluding unreachable paths*
+
+TR for data = 3 paths <br>
 Test paths = 3 paths <br>
-Coverage = 75%
 
 TR for r = 1 path <br>
 Test paths = 1 path <br>
-Coverage = 100%
 
 TR for rowCount = 2 paths <br>
 Test paths = 2 paths <br>
-Coverage = 100%
 
 TR for n = 2 paths <br>
 Test paths = 2 paths <br>
-Coverage = 100%
 
-TR for n = 2 paths <br>
+TR for n = 0 paths (the other n) <br>
 Test paths = 0 paths <br>
-Coverage = 0%
 
-TR for total = 3 paths <br>
-Test paths = 3 paths <br>
-Coverage = 100%
+TR for total = 5 paths <br>
+Test paths = 5 paths <br>
+
+Overall Coverage = 100%
 
 # 3 A detailed description of the testing strategy for the new unit test
 
