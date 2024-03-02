@@ -14,7 +14,7 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-Text…
+The goal of this assignment is to learn how to use code coverage tools and understand the different kinds of coverage. Design new test cases based on the test results to improve various coverage rates and find out potential bugs.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
