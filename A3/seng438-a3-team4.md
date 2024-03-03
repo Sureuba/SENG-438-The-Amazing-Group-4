@@ -100,11 +100,80 @@ Overall Coverage = 100%
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Text…
+A: double calculateColumnTotal(Values2D data, int column)
+A1. Data contains positive value, valid
+A2. Data contains negative value, valid
+A3. Data contains only zero value, valid
+A4. Data contains only null value, invalid
+A5. Data contains invalid data object(non-double), invalid
+A6. Data contains MIN_VALUE and Max_VALUE, valid
+A7. Data contains positive value and two columns, but just the column_1 will be used, valid
+
+B: double calculateRowTotal(Values2D data, int row)
+B1. Data contains positive value, valid
+B2. Data contains negative value, valid
+B3. Data contains only zero value, valid
+B4. Data contains only null value, invalid
+B5. Data contains invalid data object, invalid
+B6. Data contains MIN_VALUE and Max_VALUE, valid
+B7. Only the values in the row_1 will be used
+
+C: java.lang.Number[] createNumberArray(double[] data)
+C1. Data contains normal value, valid (contains positive, negative, and zero values)
+C2. Data is empty, valid
+C3. Data contains null value, invalid
+C4. Data contains MIN_VALUE and Max_VALUE, valid
+
+
+D: java.lang.Number[] createNumberArray2D(double[][] data)
+D1. Data contains normal value, valid (contains positive, negative, and zero values)
+D2. Data is empty, valid
+D3. Data contains null value, invalid
+D4. Data contains MIN_VALUE and Max_VALUE, valid
+
+E: KeyedValues getCumulativePercentages(KeyedValues data)
+Negative values in cumulative percentages makes no sense as we cannot have negative percentages.
+E1. Data contains positive value, valid
+E2. Data is empty, valid
+E3. Data contains zero value, valid
+E4. Data contains null value, invalid
+E5. Data contains invalid data object, invalid
+E6. Data contains MIN_VALUE and Max_VALUE, valid
+
+F: boolean equal(double[][] a, double[][] b)
+F1. Two arrays contain normal and same value, return true (contains positive, negative, and zero values)
+F2. One array and the other array has different length, return false
+F3. Two arrays contain normal but have different values, return false
+F4. Two arrays are null, invalid
+F5. The first array is null but the second array has normal values, invalid
+F6. The second array is null but the first array has normal values, invalid
+
+G: double[][] clone(double[][] source)
+G1. Use this function to create a same array as the input array. Firstly, compare the lengths of two arrays. If the length-compare passed, then compare every element in the two arrays.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-Text…
+You can find all the test case references in question 3
+
+1:
+Test case - C1 - java.lang.Number[] createNumberArray(double[] data)
+Input: double[] data = { 1.0, 2.5, -3.5, 4.5, 0.0 }
+The input array is neither null nor empty, which allows all the codes to be exercised and guarantee 100% statement coverage.
+
+2:
+Test case - F1 - boolean equal(double[][] a, double[][] b)
+Inputs: 
+double[][] a = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } }
+double[][] b = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } }
+Two 2D-arrays are not null and have the same contents and length, which allows all the if-statements to be passed and continue to execute the for-loop. Exercising the for-loop covers all the codes and guarantee 100% statement coverage.
+
+3:
+Test case - F4 - boolean equal(double[][] a, double[][] b)
+Inputs: 
+double[][] a = null
+double[][] b = null
+The first array is null so that the if-statement (b == null) can be exercised. This test case can increase the condition coverage.
+
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
@@ -116,7 +185,13 @@ Text…
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+Requirements-based test
+Advantage: Requirements-driven test generation guarantees that tests encompass all the designated software requirements, thereby guaranteeing that the system's functionality meet the anticipasted standards.
+Disadvantage: Requirements-driven test generation might neglect situations not explicitly outlined in the requirements document, consequently resulting in an incomplete coverage of all potential issues.
+
+Coverage-based test
+Advantage: Coverage-based test generation can ensure that test cases cover all execution paths of the code, help evaluate the comprehensiveness of the test, and discover potential code defects.
+Disadvantage: Coverage-based test generation may ignore some important functional requirements, resulting in the inability to fully test the functionality of the system. Sometimes in order to achieve high coverage, substantial test cases may be generated which increases the cost and complexity of testing.
 
 # 8 A discussion on how the team work/effort was divided and managed (Naina and Uruba)
 
@@ -124,7 +199,8 @@ Text…
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+Difficulties: Understanding the different types of coverage can be difficult. It is hard to distinguishing between branch coverage and condition coverage. Sometimes it is necessary to create a large number of test cases to improve overall coverage. However, in many scenarios it is difficult to design corresponding test cases.
+What we learned: We use test coverage tools to test coverage to know which parts of code need to design additional test cases to be exercised.
 
 # 10 Comments/feedback on the lab itself
 
