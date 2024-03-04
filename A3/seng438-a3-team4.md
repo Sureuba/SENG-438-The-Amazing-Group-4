@@ -181,7 +181,7 @@ Text…
 
 # 6 Pros and Cons of coverage tools used and Metrics you report 
 
-The coverage tool used was EclEmma. Pros of this tool are that it clearly shows the statements of the class that need to be tested like methods, branches, and statements. They are colour coated. 
+One of the coverage tools used was EclEmma. Pros of this tool are that it clearly shows the statements of the class that need to be tested like methods, branches, and statements. All the information is colour coated, and well organized. A con with the EclEmma tool is that you must naviagte to the file system to the specific class everytime you want to run the coverage tool. This is time consuming and could be visually improved. JaCoCo is another coverage tool we used. A pro of this tool is that it can download a report in the form of an HTML file. A con, is in order to find the details of each method, the whole report needs to be downloaded, otherwise only general coverage can be accessed. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
