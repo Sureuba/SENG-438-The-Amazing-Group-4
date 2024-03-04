@@ -179,9 +179,9 @@ The first array is null so that the if-statement (b == null) can be exercised. T
 
 Text…
 
-# 6 Pros and Cons of coverage tools used and Metrics you report (Naina and Uruba
+# 6 Pros and Cons of coverage tools used and Metrics you report 
 
-Text…
+The coverage tool used was EclEmma. Pros of this tool are that it clearly shows the statements of the class that need to be tested like methods, branches, and statements. They are colour coated. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
@@ -193,9 +193,8 @@ Coverage-based test
 Advantage: Coverage-based test generation can ensure that test cases cover all execution paths of the code, help evaluate the comprehensiveness of the test, and discover potential code defects.
 Disadvantage: Coverage-based test generation may ignore some important functional requirements, resulting in the inability to fully test the functionality of the system. Sometimes in order to achieve high coverage, substantial test cases may be generated which increases the cost and complexity of testing.
 
-# 8 A discussion on how the team work/effort was divided and managed (Naina and Uruba)
-
-Text…
+# 8 A discussion on how the team work/effort was divided and managed
+Uruba and Naina worked on the coverage tests, the data flow graph, the def-use sets per statement, DU-pairs per variable, and calculate the DU-Pair coverage for Range Tests. Chuhang and Bill worked on on the coverage tests, the data flow graph, the def-use sets per statement, DU-pairs per variable, and calculate the DU-Pair coverage for Data Utilities. This way two pairs were able to focus on exploring one class thoroughly. We communicated clearly and looked over one another's code to catch each other's mistakes and divided all work evenly. 
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
@@ -204,4 +203,4 @@ What we learned: We use test coverage tools to test coverage to know which parts
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+Through the lab, we learned a different technique to white box coverage testing. It allowed us to throughly explore how to get more coverage on our tests we previously created. It was time consuming, but the outcome was a great learning experience. 
