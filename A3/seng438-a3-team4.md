@@ -155,6 +155,59 @@ F6. The second array is null but the first array has normal values, invalid <br>
 G: double[][] clone(double[][] source) <br>
 G1. Use this function to create a same array as the input array. Firstly, compare the lengths of two arrays. If the length-compare passed, then compare every element in the two arrays. <br>
 
+
+
+
+
+**Class Range Test Plan**
+
+Testing **Range()**
+
+| Testing Function | Equivalent Classes | Expected Outcomes | 
+| --- | --- | --- |
+| testCtorValues | Between invalid range values. Range: 50 to 4 | returns: Will throw an IllegalArgumentException |
+
+Testing **toString()**
+
+| Testing Function | Equivalent Classes | Expected Outcomes | 
+| --- | --- | --- |
+| testToString | Between valid range values. Range: -1 to 1 | returns: A printed string to terminal  |
+
+Testing **getLength()**
+
+| Testing Function | Equivalent Classes | Expected Outcomes | 
+| --- | --- | --- |
+| getNegToPosLength | Input between valid range values. Range: -1 to 1 | returns: 2 |
+| getLengthPostoPos | Input between valid range values. Range: 1 to 10 | returns: 9 |
+
+Testing **intersects( Range range1, Range range2)**
+
+| Testing Function | Equivalent Classes | Expected Outcomes | 
+| --- | --- | --- |
+| intersectsOverlapWithin | Between valid range values. Range: 0 to 10 and 1 to 10  | returuns: true |
+| intersectsOverlapWithBiggerRange | Between valid range values. Range: -1 to 1 and -10 to 0  | returuns: true |
+
+
+Testing **intersects(double b0, double b1)**
+
+| Testing Function | Equivalent Classes | Expected Outcomes | 
+| --- | --- | --- |
+| intersectsBiggerTestRangesOverlaps | Between valid range values. Range: -1 to 1 and -5 to 5  | returuns: true |
+| intersectsLessThanLB | Between valid range values. Range: 0 to 10 and -2 to 5 | returuns: true |
+| intersectsLessThanLB2 | Between valid range values. Range: 0 to 10 and -2 to 11 | returuns: true |
+| intersectHalfOverlap | Between valid range values. Range: -1 to 1 and 0 to 5  | returns: true |
+| intersectsWithinRange | Between valid range values. Range: 0 to 10 and 2 to 5  | returns: true |
+
+Testing **contains(double b0)**
+
+| Testing Function | Equivalent Classes | Expected Outcomes | 
+| --- | --- | --- |
+| containsLowerEdgeValue | Between valid range values. Range: -1 and 1, contains -1 | returuns: true |
+| containsUpperEdgeValue | Between valid range values. Range: -1 and 1, contains 1 | returuns: true |
+| containsBothUBandLB | Between valid range values. Range: 1 and 1, ccontains 1 | returuns: true |
+
+
+
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 You can find all the test case references in question 3
