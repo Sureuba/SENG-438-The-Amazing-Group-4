@@ -98,7 +98,12 @@ Test paths = 5 paths <br>
 
 Overall Coverage = 100%
 
-## Range.getCentralValue
+## Range.constrain(double val)
+
+**Data Flow Graph**
+
+
+![IMG_0405](https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/f8bb1281-13f8-4d38-a7fc-2cfe28e7f7a5)
 
 
 
