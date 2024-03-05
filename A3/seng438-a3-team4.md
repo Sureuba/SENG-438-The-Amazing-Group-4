@@ -149,7 +149,9 @@ Overall Coverage = 100%
 
 
 **DU-Pair Coverage**
+<br>
 CU = 4
+<br>
 PU = 4
 
 # 3 A detailed description of the testing strategy for the new unit test
