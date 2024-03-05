@@ -234,12 +234,12 @@ The first array is null so that the if-statement (b == null) can be exercised. T
 4:
 Test case - void testCtorValues() <br>
 Inputs: Range(50,4) <br>
-Creating a Range object with mixed up values for the constructor. Instead of low to high the range is created with high to low values. This tested the constructor of the Range class to see if the if-statement inside the constructor works and throws a new illegal argument exception.
+Creating a Range object with mixed up values for the constructor. Instead of low to high the range is created with high to low values. This tested the constructor of the Range class to see if the if-statement inside the constructor works and throws a new illegal argument exception. This increased the branch coverage to 100%, line coverage to 100%, and method coverage to 100%.
 
 5:
 Test case - void constiansBothUBandLB () <br>
 Inputs: exRange7.contains(1) <br>
-This fucnction ensures that we tested the else statement in the contains function. This makes sure that if both upper and lower bound were the same, that value would be contained within the range. It made sure to go into the else statement.
+This fucnction ensures that we tested the else statement in the contains function. This makes sure that if both upper and lower bound were the same, that value would be contained within the range. It made sure to go into the else statement. This increased the branch coverage to 75%, line coverage to 100%, and method coverage to 100%.
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
