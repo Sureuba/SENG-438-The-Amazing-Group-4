@@ -193,6 +193,11 @@ The first array is null so that the if-statement (b == null) can be exercised. T
 
 ![alt text](image-2.png)
 
+
+**Range Method Coverage**
+![PHOTO-2024-03-04-20-43-37](https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/12d40328-c494-44d1-8645-f8d8f310a748)
+
+
 # 6 Pros and Cons of coverage tools used and Metrics you report 
 
 One of the coverage tools used was EclEmma. Pros of this tool are that it clearly shows the statements of the class that need to be tested like methods, branches, and statements. All the information is colour coated, and well organized. A con with the EclEmma tool is that you must navigate to the file system to the specific class every time you want to run the coverage tool. This is time consuming and could be visually improved. JaCoCo is another coverage tool we used. A pro of this tool is that it can download a report in the form of an HTML file. A con, is in order to find the details of each method, the whole report needs to be downloaded, otherwise only general coverage can be accessed. 
