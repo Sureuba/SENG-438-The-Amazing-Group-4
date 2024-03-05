@@ -107,7 +107,7 @@ Overall Coverage = 100%
 
 **Def-Use Sets**
 
-| constrain |
+| constrain(double val) |
 | --- |
 | def(1) = {result} <br> use(1) = {value} |
 | def(2) = {} <br> use(2) = {value} |
@@ -120,7 +120,7 @@ Overall Coverage = 100%
 
 **DU-Pairs**
 
-| calculateColumnTotal |
+| constrain(double val) |
 | --- |
 |du(1, 1, value) = {1}|
 |du(1, 3, value) = {1, 2}|
