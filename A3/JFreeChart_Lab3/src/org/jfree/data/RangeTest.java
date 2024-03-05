@@ -62,12 +62,12 @@ public class RangeTest {
     
     
     //ALL NEW test combine(Range range1, Range range2) function ************************************************************
-    @Test 
-    public void testToString() {
-    	assertEquals("Combining with null should return the non-null range", range1, Range.combine(range1, range2));
-        ````````````````````````````````````````````````````````````````````````````````````````
-    }
-    
+//    @Test 
+//    public void testToString() {
+//    	assertEquals("Combining with null should return the non-null range", range1, Range.combine(range1, range2));
+//        ````````````````````````````````````````````````````````````````````````````````````````
+//    }
+//    
     
     //ALL NEW Test getLength() function ************************************************************************************
     @Test
@@ -82,7 +82,7 @@ public class RangeTest {
     }
     
     
-    //ALL NEW Test intersects(range1, range2) function ************************************************************************************
+    //ALL NEW Test intersects(Range range1,Range range2) function ************************************************************************************
     @Test
     public void intersectsOverlapWithin() {
         assertTrue("Ranges 0 to 10 and 1 to 10 should overlap", exRange2.intersects(exRange3));
@@ -92,7 +92,7 @@ public class RangeTest {
     }
     
     
-    //ALL NEW Test intersects(b0, b1) function ************************************************************************************
+    //ALL NEW Test intersects(double b0, double b1) function ************************************************************************************
     @Test
     public void intersectsBiggerTestRangesOverlaps() {
         assertTrue("Ranges -1 to 1 and -5 to 5 should overlap", exRange.intersects(-5, 5));
@@ -148,7 +148,7 @@ public class RangeTest {
         		avg, minMaxRange.getCentralValue(), .000000001d);
     }
 
-    //Testing contains() function *******************************************************************************
+    //Testing contains(double b0) function *******************************************************************************
     //NEW
     @Test 
     public void containsLowerEdgeValue() {assertTrue(exRange.contains(-1)); }
@@ -157,6 +157,7 @@ public class RangeTest {
     @Test
     public void containsUpperEdgeValue() {assertTrue(exRange.contains(1)); }
     
+    //NEW
     @Test
     public void containsBothUBandLB() {assertTrue(exRange7.contains(1)); }
     
