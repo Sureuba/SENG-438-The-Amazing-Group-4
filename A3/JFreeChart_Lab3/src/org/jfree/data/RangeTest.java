@@ -15,7 +15,10 @@ public class RangeTest {
     private Range exRange4;
     private Range exRange5, exRange6, exRange7;
     private Range minMaxRange;
-    private Range nullRange; 
+    private Range nullRange;
+    private Range positiveRange;
+	private Range negativeRange;
+	private Range zeroRange;
     
     @BeforeClass 
     public static void setUpBeforeClass() throws Exception {
@@ -43,13 +46,19 @@ public class RangeTest {
     	
     	nullRange = null;
     	
+    	positiveRange = new Range(4, 6);
+    	
+    	negativeRange = new Range(-8, -4);
+    	
+    	zeroRange = new Range(0, 0);
+    	
     	//min and max range values
     	minMaxRange = new Range(Double.MIN_VALUE, Double.MAX_VALUE);
     	
     }
     
     //NEW: if (lower > upper) for constructor
-    @Test 
+    @Test(expected = IllegalArgumentException.class)
     public void testCtorValues() {
     	exRange6 =  new Range(50, 4);
     }
@@ -257,7 +266,7 @@ public class RangeTest {
     @Test
     public void getLowerBoundNegativeValue() {
     	assertEquals("The lower bound in range -10 to 0 is -10",
-    	        10, exRange4.getLowerBound(), .000000001d);
+    	        -10, exRange4.getLowerBound(), .000000001d);
     }
     @Test
     public void getLowerBoundZeroValue() {
@@ -270,6 +279,177 @@ public class RangeTest {
     			Double.MIN_VALUE, minMaxRange.getLowerBound(), .000000001d);
     }
     
+    @Test
+    public void combineFirstNullTest() {
+    	assertEquals("Combine null and (2,6) should return (2, 6)", positiveRange, Range.combine(null, positiveRange));
+    }
+    
+    @Test
+    public void combineSecondullTest() {
+    	assertEquals("Combine null and (2,6) should return (2, 6)", positiveRange, Range.combine(positiveRange, null));
+    }
+    
+    @Test
+    public void combineTest() {
+    	assertEquals("Combine (2,6) and (2,6) should return (2, 6)", positiveRange, Range.combine(positiveRange, positiveRange));
+    }
+    
+    @Test
+    public void combinecombineIgnoringNaNFirstNullTest() {
+    	assertEquals("Combine null and (2,6) should return (2, 6)", positiveRange, Range.combineIgnoringNaN(null, positiveRange));
+    }
+    
+    @Test
+    public void combinecombineIgnoringNaNSecondNullTest() {
+    	assertEquals("Combine null and (2,6) should return (2, 6)", positiveRange, Range.combineIgnoringNaN(positiveRange, null));
+    }
+    
+    @Test
+    public void combinecombineIgnoringNaNTest() {
+    	assertEquals("Combine (2,6) and (2,6) should return (2, 6)", positiveRange, Range.combineIgnoringNaN(positiveRange, positiveRange));
+    }
+    
+    @Test
+    public void combinecombineIgnoringNaNSecondNaNTest() {
+    	Range NaNRange = new Range(Double.NaN, Double.NaN);
+    	assertEquals("Combine Null and NaN should return null", null, Range.combineIgnoringNaN(null, NaNRange));
+    }
+    
+    @Test
+    public void combinecombineIgnoringNaNFirstNaNTest() {
+    	Range NaNRange = new Range(Double.NaN, Double.NaN);
+    	assertEquals("Combine NaN and Null should return null", null, Range.combineIgnoringNaN(NaNRange, null));
+    }
+    
+    @Test
+    public void combinecombineIgnoringNaNBothNaNTest() {
+    	Range NaNRange = new Range(Double.NaN, Double.NaN);
+    	assertEquals("Combine NaN and NaN should return null", null, Range.combineIgnoringNaN(NaNRange, NaNRange));
+    }
+    
+    @Test
+    public void combineIgnoringNaNTest() {
+    	Range range1 = new Range(3, 5);
+    	Range range2 = new Range(Double.NaN, Double.NaN);
+    	
+    	assertEquals("Combine (3, 5) and NaN should return (3, 5)", range1, Range.combineIgnoringNaN(range1, range2));
+    }
+    
+    @Test
+    public void expandToIncludeNullTest() {
+    	Range resultRange = new Range(1, 1);
+    	assertEquals("Expand Null with 1 should return (1, 1)", resultRange, Range.expandToInclude(null, 1));
+    }
+    
+    @Test
+    public void expandToIncludeBLBTest() {
+    	Range resultRange = new Range(3, 6);
+    	assertEquals("Expand (4, 6) with 3 should return (3, 6)", resultRange, Range.expandToInclude(positiveRange, 3));
+    }   
+    
+    @Test
+    public void expandToIncludeAUBTest() {
+    	Range resultRange = new Range(4, 7);
+    	assertEquals("Expand (4, 6) with 7 should return (4, 7)", resultRange, Range.expandToInclude(positiveRange, 7));
+    }
+    
+    @Test
+    public void expandToIncludeNOMTest() {
+    	Range resultRange = new Range(4, 6);
+    	assertEquals("Expand (4, 6) with 5 should return (4, 6)", resultRange, Range.expandToInclude(positiveRange, 5));
+    }
+    
+    @Test
+    public void expandlowerMarginTest() {
+    	Range resultRange = new Range(0, 6);
+    	assertEquals("Expand (4, 6) with lowerMargin = 2 should return (0, 6)", resultRange, Range.expand(positiveRange, 2, 0));
+    }
+    
+    @Test
+    public void expandTest() {
+    	Range resultRange = new Range(7, 7);
+    	assertEquals("Expand (4, 6) with lowerMargin = -2 should return (7, 7)", resultRange, Range.expand(positiveRange, -2, 0));
+    }
+    
+    @Test
+    public void shiftTest() {
+    	Range resultRange = new Range(6, 8);
+    	assertEquals("Shift (4, 6) with delta = 2 should return (6, 8)", resultRange, Range.shift(positiveRange, 2));
+    }
+    
+    @Test
+    public void shiftallowZeroCrossingTest() {
+    	Range resultRange = new Range(-2, 0);
+    	assertEquals("Shift (4, 6) with delta = -6 should return (-2, 0)", resultRange, Range.shift(positiveRange, -6, true));
+    }
+    
+    @Test
+    public void shiftWithNoZeroCrossingTest() {
+    	Range resultRange = new Range(0, 0);
+    	assertEquals("Shift (4, 6) with delta = -6 should return (0, 0)", resultRange, Range.shift(positiveRange, -6, false));
+    }
+    
+    @Test
+    public void shiftWithNoZeroCrossingNegativeTest() {
+    	Range resultRange = new Range(-10, -6);
+    	assertEquals("Shift (-8, -4) with delta = -2 should return (-10, -6)", resultRange, Range.shift(negativeRange, -2, false));
+    }
+    
+    @Test
+    public void shiftWithNoZeroCrossingZeroTest() {
+    	Range resultRange = new Range(0, 0);
+    	assertEquals("Shift (0, 0) with delta = 0 should return (0, 0)", resultRange, Range.shift(zeroRange, 0, false));
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void scaleExceptionTest() {
+    	Range.scale(positiveRange, -1);
+    }
+    
+    @Test
+    public void scaleTest() {
+    	Range resultRange = new Range(8, 12);
+    	assertEquals("Scale (4, 6) with factor = 0 should return (8, 12)", resultRange, Range.scale(positiveRange, 2));
+    }
+    
+    @Test
+    public void equalsTest() {
+    	assertTrue(positiveRange.equals(positiveRange));
+    }
+    
+    @Test
+    public void equalsNotRangeTest() {
+    	assertFalse(positiveRange.equals("a"));
+    }
+    
+    @Test
+    public void equalsLowerTest() {
+    	assertFalse(positiveRange.equals(negativeRange));
+    }
+    
+    @Test
+    public void equalsUpperTest() {
+    	Range resultRange = new Range(4, 12);
+    	assertFalse(positiveRange.equals(resultRange));
+    }
+    
+    @Test
+    public void isNaNRangeTest() {
+    	Range resultRange = new Range(Double.NaN, 12);
+    	assertFalse(resultRange.isNaNRange());
+    }
+    
+    @Test
+    public void hashCodeTest() {
+    	assertEquals("Hashcode for (4, 6) should be -2115502080",-2115502080, positiveRange.hashCode());
+    }
+    
+    @Test
+    public void toStringTest() {
+    	String toString = "Range[4.0,6.0]";
+    	assertEquals("Tostring for (4, 6) should return Range[4.0, 6.0]", toString, positiveRange.toString());
+    }
+    
     @After
     public void tearDown() throws Exception {
     	 exRange = null;
@@ -277,6 +457,11 @@ public class RangeTest {
     	 exRange3 = null;
     	 exRange4 = null;
     	 exRange5 = null;
+    	 exRange6 = null;
+    	 exRange7 = null;
+    	 positiveRange = null;
+    	 negativeRange = null;
+    	 zeroRange = null;
     }
 
     @AfterClass

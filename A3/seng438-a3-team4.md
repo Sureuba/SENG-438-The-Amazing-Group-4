@@ -310,17 +310,15 @@ This fucnction ensures that we tested the else statement in the contains functio
 
 **Range Method Coverage**
 
-![PHOTO-2024-03-04-20-43-37](https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/12d40328-c494-44d1-8645-f8d8f310a748)
+![alt text](image-4.png)
 
 **Range Line Coverage**
 
-![PHOTO-2024-03-04-20-44-25](https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/8845acab-1639-4678-9326-1b88f28cbdf6)
+![alt text](image-5.png)
 
 **Range Branch Coverage**
 
-![PHOTO-2024-03-04-20-45-25](https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/cc74eb3f-ef71-485c-a235-a6284b2fa660)
-
-
+![alt text](image-3.png)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report 
 

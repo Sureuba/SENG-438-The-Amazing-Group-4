@@ -102,12 +102,12 @@ public strictfp class Range implements Serializable {
      * @return The lower bound.
      */
     public double getLowerBound() {
-    	//This makes the coverage less since it is covered in the CTOR and cannot be fixed so it was commented out
-//        if (lower > upper) {
-//            String msg = "Range(double, double): require lower (" + lower
-//                + ") <= upper (" + upper + ").";
-//            throw new IllegalArgumentException(msg);
-//        }
+    	//This makes the coverage less since it is covered in the CTOR and cannot be fixed
+        if (lower > upper) {
+            String msg = "Range(double, double): require lower (" + lower
+                + ") <= upper (" + upper + ").";
+            throw new IllegalArgumentException(msg);
+        }
         return this.lower;
     }
 
@@ -117,12 +117,12 @@ public strictfp class Range implements Serializable {
      * @return The upper bound.
      */
     public double getUpperBound() {
-    	//This makes the coverage less since it is covered in the CTOR and cannot be fixed so it was commented out
-//        if (lower > upper) {
-//            String msg = "Range(double, double): require lower (" + lower
-//                + ") <= upper (" + upper + ").";
-//            throw new IllegalArgumentException(msg);
-//        }
+    	//This makes the coverage less since it is covered in the CTOR and cannot be fixed
+        if (lower > upper) {
+            String msg = "Range(double, double): require lower (" + lower
+                + ") <= upper (" + upper + ").";
+            throw new IllegalArgumentException(msg);
+        }
         return this.upper;
     }
 
@@ -132,12 +132,12 @@ public strictfp class Range implements Serializable {
      * @return The length.
      */
     public double getLength() {
-    	//This makes the coverage less since it is covered in the CTOR and cannot be fixed so it was commented out
-//        if (lower > upper) {
-//            String msg = "Range(double, double): require lower (" + lower
-//                + ") <= upper (" + upper + ").";
-//            throw new IllegalArgumentException(msg);
-//        }
+    	//This makes the coverage less since it is covered in the CTOR and cannot be fixed
+        if (lower > upper) {
+            String msg = "Range(double, double): require lower (" + lower
+                + ") <= upper (" + upper + ").";
+            throw new IllegalArgumentException(msg);
+        }
         return this.upper - this.lower;
     }
 
