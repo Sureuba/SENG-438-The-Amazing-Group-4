@@ -185,7 +185,7 @@ Creating a Range object with mixed up values for the constructor. Instead of low
 
 5:
 Test case - void constiansBothUBandLB () <br>
-Inputs: exRange7.contains(1)
+Inputs: exRange7.contains(1) <br>
 This fucnction ensures that we tested the else statement in the contains function. This makes sure that if both upper and lower bound were the same, that value would be contained within the range. It made sure to go into the else statement.
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
