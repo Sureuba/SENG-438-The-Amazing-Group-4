@@ -100,93 +100,103 @@ Overall Coverage = 100%
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-A: double calculateColumnTotal(Values2D data, int column)
-A1. Data contains positive value, valid
-A2. Data contains negative value, valid
-A3. Data contains only zero value, valid
-A4. Data contains only null value, invalid
-A5. Data contains invalid data object(non-double), invalid
-A6. Data contains MIN_VALUE and Max_VALUE, valid
-A7. Data contains positive value and two columns, but just the column_1 will be used, valid
+A: double calculateColumnTotal(Values2D data, int column) <br>
+A1. Data contains positive value, valid <br>
+A2. Data contains negative value, valid <br>
+A3. Data contains only zero value, valid <br>
+A4. Data contains only null value, invalid <br>
+A5. Data contains invalid data object(non-double), invalid <br>
+A6. Data contains MIN_VALUE and Max_VALUE, valid <br>
+A7. Data contains positive value and two columns, but just the column_1 will be used, valid <br>
 
-B: double calculateRowTotal(Values2D data, int row)
-B1. Data contains positive value, valid
-B2. Data contains negative value, valid
-B3. Data contains only zero value, valid
-B4. Data contains only null value, invalid
-B5. Data contains invalid data object, invalid
-B6. Data contains MIN_VALUE and Max_VALUE, valid
-B7. Only the values in the row_1 will be used
+B: double calculateRowTotal(Values2D data, int row) <br>
+B1. Data contains positive value, valid <br>
+B2. Data contains negative value, valid <br>
+B3. Data contains only zero value, valid <br>
+B4. Data contains only null value, invalid <br>
+B5. Data contains invalid data object, invalid <br>
+B6. Data contains MIN_VALUE and Max_VALUE, valid <br>
+B7. Only the values in the row_1 will be used <br>
 
-C: java.lang.Number[] createNumberArray(double[] data)
-C1. Data contains normal value, valid (contains positive, negative, and zero values)
-C2. Data is empty, valid
-C3. Data contains null value, invalid
-C4. Data contains MIN_VALUE and Max_VALUE, valid
+C: java.lang.Number[] createNumberArray(double[] data) <br>
+C1. Data contains normal value, valid (contains positive, negative, and zero values) <br>
+C2. Data is empty, valid <br>
+C3. Data contains null value, invalid <br>
+C4. Data contains MIN_VALUE and Max_VALUE, valid <br>
 
 
-D: java.lang.Number[] createNumberArray2D(double[][] data)
-D1. Data contains normal value, valid (contains positive, negative, and zero values)
-D2. Data is empty, valid
-D3. Data contains null value, invalid
-D4. Data contains MIN_VALUE and Max_VALUE, valid
+D: java.lang.Number[] createNumberArray2D(double[][] data) <br>
+D1. Data contains normal value, valid (contains positive, negative, and zero values) <br>
+D2. Data is empty, valid <br>
+D3. Data contains null value, invalid <br>
+D4. Data contains MIN_VALUE and Max_VALUE, valid <br>
 
-E: KeyedValues getCumulativePercentages(KeyedValues data)
-Negative values in cumulative percentages makes no sense as we cannot have negative percentages.
-E1. Data contains positive value, valid
-E2. Data is empty, valid
-E3. Data contains zero value, valid
-E4. Data contains null value, invalid
-E5. Data contains invalid data object, invalid
-E6. Data contains MIN_VALUE and Max_VALUE, valid
+E: KeyedValues getCumulativePercentages(KeyedValues data) <br>
+Negative values in cumulative percentages makes no sense as we cannot have negative percentages. <br>
+E1. Data contains positive value, valid <br>
+E2. Data is empty, valid <br>
+E3. Data contains zero value, valid <br>
+E4. Data contains null value, invalid <br>
+E5. Data contains invalid data object, invalid <br>
+E6. Data contains MIN_VALUE and Max_VALUE, valid <br>
 
-F: boolean equal(double[][] a, double[][] b)
-F1. Two arrays contain normal and same value, return true (contains positive, negative, and zero values)
-F2. One array and the other array has different length, return false
-F3. Two arrays contain normal but have different values, return false
-F4. Two arrays are null, invalid
-F5. The first array is null but the second array has normal values, invalid
-F6. The second array is null but the first array has normal values, invalid
+F: boolean equal(double[][] a, double[][] b) <br>
+F1. Two arrays contain normal and same value, return true (contains positive, negative, and zero values) <br>
+F2. One array and the other array has different length, return false <br>
+F3. Two arrays contain normal but have different values, return false <br>
+F4. Two arrays are null, invalid <br>
+F5. The first array is null but the second array has normal values, invalid <br>
+F6. The second array is null but the first array has normal values, invalid <br>
 
-G: double[][] clone(double[][] source)
-G1. Use this function to create a same array as the input array. Firstly, compare the lengths of two arrays. If the length-compare passed, then compare every element in the two arrays.
+G: double[][] clone(double[][] source) <br>
+G1. Use this function to create a same array as the input array. Firstly, compare the lengths of two arrays. If the length-compare passed, then compare every element in the two arrays. <br>
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 You can find all the test case references in question 3
 
 1:
-Test case - C1 - java.lang.Number[] createNumberArray(double[] data)
-Input: double[] data = { 1.0, 2.5, -3.5, 4.5, 0.0 }
+Test case - C1 - java.lang.Number[] createNumberArray(double[] data) <br>
+Input: double[] data = { 1.0, 2.5, -3.5, 4.5, 0.0 } <br>
 The input array is neither null nor empty, which allows all the codes to be exercised and guarantee 100% statement coverage.
 
 2:
-Test case - F1 - boolean equal(double[][] a, double[][] b)
-Inputs: 
-double[][] a = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } }
-double[][] b = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } }
+Test case - F1 - boolean equal(double[][] a, double[][] b) <br>
+Inputs: <br>
+double[][] a = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } } <br>
+double[][] b = { { 1.0, -2.5, 3.5, 0 }, { -5.0, 6.5, 7.5, 8.5 } } <br>
 Two 2D-arrays are not null and have the same contents and length, which allows all the if-statements to be passed and continue to execute the for-loop. Exercising the for-loop covers all the codes and guarantee 100% statement coverage.
 
 3:
-Test case - F4 - boolean equal(double[][] a, double[][] b)
-Inputs: 
-double[][] a = null
-double[][] b = null
+Test case - F4 - boolean equal(double[][] a, double[][] b) <br>
+Inputs: <br>
+double[][] a = null <br>
+double[][] b = null <br>
 The first array is null so that the if-statement (b == null) can be exercised. This test case can increase the condition coverage.
 
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-Text…
+**DataUtilities Line Coverage**
+
+![alt text](image.png)
+
+**DataUtilities Branch Coverage**
+
+![alt text](image-1.png)
+
+**DataUtilities Method Coverage**
+
+![alt text](image-2.png)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report 
 
-One of the coverage tools used was EclEmma. Pros of this tool are that it clearly shows the statements of the class that need to be tested like methods, branches, and statements. All the information is colour coated, and well organized. A con with the EclEmma tool is that you must naviagte to the file system to the specific class everytime you want to run the coverage tool. This is time consuming and could be visually improved. JaCoCo is another coverage tool we used. A pro of this tool is that it can download a report in the form of an HTML file. A con, is in order to find the details of each method, the whole report needs to be downloaded, otherwise only general coverage can be accessed. 
+One of the coverage tools used was EclEmma. Pros of this tool are that it clearly shows the statements of the class that need to be tested like methods, branches, and statements. All the information is colour coated, and well organized. A con with the EclEmma tool is that you must navigate to the file system to the specific class every time you want to run the coverage tool. This is time consuming and could be visually improved. JaCoCo is another coverage tool we used. A pro of this tool is that it can download a report in the form of an HTML file. A con, is in order to find the details of each method, the whole report needs to be downloaded, otherwise only general coverage can be accessed. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
 Requirements-based test
-Advantage: Requirements-driven test generation guarantees that tests encompass all the designated software requirements, thereby guaranteeing that the system's functionality meet the anticipasted standards.
+Advantage: Requirements-driven test generation guarantees that tests encompass all the designated software requirements, thereby guaranteeing that the system's functionality meet the anticipated standards.
 Disadvantage: Requirements-driven test generation might neglect situations not explicitly outlined in the requirements document, consequently resulting in an incomplete coverage of all potential issues.
 
 Coverage-based test
@@ -203,4 +213,4 @@ What we learned: We use test coverage tools to test coverage to know which parts
 
 # 10 Comments/feedback on the lab itself
 
-Through the lab, we learned a different technique to white box coverage testing. It allowed us to throughly explore how to get more coverage on our tests we previously created. It was time consuming, but the outcome was a great learning experience. 
+Through the lab, we learned a different technique to white box coverage testing. It allowed us to thoroughly explore how to get more coverage on our tests we previously created. It was time consuming, but the outcome was a great learning experience. 
