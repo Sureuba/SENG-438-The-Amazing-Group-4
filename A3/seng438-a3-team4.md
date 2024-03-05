@@ -136,6 +136,17 @@ Overall Coverage = 100%
 |du(6, 6, result) = {6}|
 |du(7, 7, result) = {7}|
 
+**Pairs Covered**
+| Test Case | Pairs Covered |
+| --- | --- |
+| constrainShouldBePositiveValue | du(1, 1, value), du(1, 3, value), du(1, 7, value), du(1, 4, result), du(4, 4, result), du(1, 7, result) |
+| constrainShouldBeNegativeValue | du(1, 1, value), du(1, 5, value), du(1, 7, value), du(5, 5, this.lower), du(5, 6, this.lower), du(5, 6, result) |
+| constrainShouldBeZero | du(1, 1, value), du(1, 2, value), du(1, 7, value), du(1, 7, result) |
+| constrainShouldBeUpperBoundaryValue | du(1, 1, value), du(1, 3, value), du(1, 7, value), du(1, 4, result), du(4, 4, result), du(1, 7, result) |
+| constrainShouldBeLowerBoundaryValue | du(1, 1, value), du(1, 5, value), du(1, 7, value), du(5, 5, this.lower), du(5, 6, this.lower), du(5, 6, result) |
+| constrainMaxTest | du(1, 1, value), du(1, 3, value), du(1, 7, value), du(1, 4, result), du(4, 4, result), du(1, 7, result) |
+| constrainMinTest | du(1, 1, value), du(1, 2, value), du(1, 7, value), du(1, 7, result) |
+
 
 
 # 3 A detailed description of the testing strategy for the new unit test
