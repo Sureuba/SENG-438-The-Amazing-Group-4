@@ -148,6 +148,9 @@ Overall Coverage = 100%
 | constrainMinTest | du(1, 1, value), du(1, 2, value), du(1, 7, value), du(1, 7, result) |
 
 
+**DU-Pair Coverage**
+CU = 4
+PU = 4
 
 # 3 A detailed description of the testing strategy for the new unit test
 
