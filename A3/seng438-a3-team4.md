@@ -105,6 +105,37 @@ Overall Coverage = 100%
 
 ![IMG_0405](https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/f8bb1281-13f8-4d38-a7fc-2cfe28e7f7a5)
 
+**Def-Use Sets**
+
+| constrain |
+| --- |
+| def(1) = {result} <br> use(1) = {value} |
+| def(2) = {} <br> use(2) = {value} |
+| def(3) = {} <br> use(3) = {this.upper} |
+| def(4) = {result} <br> use(4) = {this.upper} |
+| def(5) = {} <br> use(5) = {value, this.lower} |
+| def(6) = {result} <br> use(6) = {this.lower} |
+| def(7) = {} <br> use(7) = {result} |
+
+
+**DU-Pairs**
+
+| calculateColumnTotal |
+| --- |
+|du(1, 1, value) = {1}|
+|du(1, 3, value) = {1, 2}|
+|du(1, 5, value) = {1, 2}|
+|du(1, 7, value) = {1, 2, 3, 5, 6, 7}|
+|du(3, 3, this.upper) = {3}|
+|du(5, 5, this.lower) = {5}|
+|du(5, 6, this.lower) = {5, 6}|
+|du(1, 4, result) = {1}|
+|du(4, 4, result) = {4}|
+|du(1, 7, result) = {1, 4, 6, 7}|
+|du(5, 6, result) = {5, 6}|
+|du(6, 6, result) = {6}|
+|du(7, 7, result) = {7}|
+
 
 
 # 3 A detailed description of the testing strategy for the new unit test
