@@ -62,9 +62,9 @@ The goal of this assignment is to learn how to use code coverage tools and under
 | du(5, 9, total) = {5, 3, 6, 9} |
 | du(8, 9, total) = {8, 6, 9} |
 
-**Parts Covered**
+**Pairs Covered**
 
-| Test Case | Parts Covered |
+| Test Case | Pairs Covered |
 | --- | --- |
 | calculateColumnTotalTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
 | calculateColumnTotalNegativeTest | du(1, 1, data), du(1, 2, data), du(1, 4, data), du(3, 3, r), du(2, 3, rowCount), du(2, 6, rowCount), du(4, 4, n), du(4, 5, n), du(1, 5, total), du(5, 5, total), du(1, 9, total), du(5, 9, total) |
