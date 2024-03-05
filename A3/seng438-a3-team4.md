@@ -178,6 +178,15 @@ double[][] a = null <br>
 double[][] b = null <br>
 The first array is null so that the if-statement (b == null) can be exercised. This test case can increase the condition coverage.
 
+4:
+Test case - void testCtorValues() <br>
+Inputs: Range(50,4) <br>
+Creating a Range object with mixed up values for the constructor. Instead of low to high the range is created with high to low values. This tested the constructor of the Range class to see if the if-statement inside the constructor works and throws a new illegal argument exception.
+
+5:
+Test case - void constiansBothUBandLB () <br>
+Inputs: exRange7.contains(1)
+This fucnction ensures that we tested the else statement in the contains function. This makes sure that if both upper and lower bound were the same, that value would be contained within the range. It made sure to go into the else statement.
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
