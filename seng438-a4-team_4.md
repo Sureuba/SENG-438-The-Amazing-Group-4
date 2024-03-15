@@ -4,9 +4,9 @@
 
 | Group \#:      |     |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
+| Student Names: |  Uruba Alam   |
+|                |   Naina Gupta  |
+|                |   Bill   |
 |                |     |
 
 # Introduction
