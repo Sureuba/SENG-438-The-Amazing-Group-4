@@ -2,7 +2,7 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \4:   |    |
+| Group \#:   |  4 |
 | -------------- | --- |
 | Student Names: |  Uruba Alam   |
 |                |   Naina Gupta  |
