@@ -6,8 +6,8 @@
 | -------------- | --- |
 | Student Names: |  Uruba Alam   |
 |                |   Naina Gupta  |
-|                |   Bill   |
-|                |     |
+|                |   Ding Kai Wu   |
+|                |    Chuhang Qi |
 
 # Introduction
 
