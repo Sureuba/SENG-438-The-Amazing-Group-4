@@ -16,8 +16,6 @@
 
 # Report all the statistics and the mutation score for each test class
 
-
-
 # Analysis drawn on the effectiveness of each of the test classes
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
