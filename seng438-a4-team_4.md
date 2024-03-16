@@ -17,13 +17,13 @@
 Analysis of 10 mutants produced by pitest for Range.java class: 
 
  
-##1. Negated conditional → KILLED (Line 90, Mutant 2) 
+**1. Negated conditional → KILLED (Line 90, Mutant 2)**
 
 For the Range constructor this means the condition: if (lower > upper) condition was negated into if (lower <= upper). The test case for checking the upper and lower values when a new object is constructed is testCtorValues() where it uses 50 for the lower value and 4 for the upper value. This test will not call the IllegalArgumentException class since the condition is negated and thus the change in the behaviour of the class will be detected and the mutant is killed.  
 
  
 
-2. Negated conditional → SURVIVED (Line 157, Mutant 2) 
+**2. Negated conditional → SURVIVED (Line 157, Mutant 2)**
 
 This is another negation condition mutation for the intersects method. The test cases failed to recognize the mutant because of the if condition failing and then going into the else statement which then returns true. We can see this in the intersectsBiggerTestRangesOverlaps() test case where the return statement in the else branch:  
 
@@ -33,7 +33,7 @@ will return true, so the mutant, which will cause the if condition on line 157 t
 
  
 
-3. Less than to greater or equal → KILLED (Line 161, Mutant 33) 
+**3. Less than to greater or equal → KILLED (Line 161, Mutant 33)**
 
 This mutant changes the condition in line 161 in the intersects method: 
 
@@ -43,7 +43,7 @@ The less than (<) operator is changed into a greater than or equal (>=) to opera
 
  
 
-4. removed conditional - replaced equality check with true → SURVIVED (Line 189, Mutant 4) 
+**4. removed conditional - replaced equality check with true → SURVIVED (Line 189, Mutant 4)**
 
 This mutation changes the constrain function, specifically the If condition on line 189:  
 
@@ -53,7 +53,7 @@ The condition is replaced with a constant true value and therefore should be cau
 
  
 
-5. Negated double field upper → KILLED  (Line 191, Mutant 1) 
+**5. Negated double field upper → KILLED  (Line 191, Mutant 1)**
 
 This mutant changes the constrains function line 191:	 
 
@@ -63,7 +63,7 @@ By negating the this.upper into -this.upper. The mutant was caught by the constr
 
  
 
-6. Negated double field lower → SURVIVED (Line 194, Mutant 1) 
+**6. Negated double field lower → SURVIVED (Line 194, Mutant 1)**
 
 This mutant changes the constrains function line 194:	 
 
@@ -72,7 +72,7 @@ result = this.lower;
 By negating the this.lower into -this.lower. The mutant is not caught by the constrainShouldBeLowerBoundaryValue() test case which takes in a value of a -50 and goes into the first if branch and then the nested else if branch. In the constrainShouldBeLowerBoundaryValue() method, we used exRange2 which is a test range we created from 0 to 10. Since the mutation negates the result = this.lower line, it does not catch the error because the lower boundary in exRange2 is 0 and negating 0, still results in 0. Therefore, the assertEquals() method does not catch the error, and the test passes, even though it should not. To fix this issue, we created another test case where the range’s lower boundary is not 0. 
 
 
-7. Incremented (++a) double local variable number 3 → KILLED (Line 197, Mutant 6) 
+**7. Incremented (++a) double local variable number 3 → KILLED (Line 197, Mutant 6)**
 
 This mutant changes the constrains function line 197:	 
 
@@ -83,8 +83,7 @@ By incrementing the result variable into ++result. The mutant pre-increments the
  
 
  
-
-8. Incremented (a++) double local variable number 3 → SURVIVED (Line 197, Mutant 4) 
+**8. Incremented (a++) double local variable number 3 → SURVIVED (Line 197, Mutant 4)**
 
 This mutant changes the constrains function line 197:	 
 
@@ -93,10 +92,9 @@ return result;
 By incrementing the result variable into result++. The mutant post-increments the result variable. This means that in the constrain function of the Range class, the result variable is incremented after it gets returned. This allows the test cases for constrain in RangeTest.java to pass because the increment happens after the return, so the tests are not able to catch that the return value has been altered. The assertEquals() function does not catch the error and is not able to see that the value has been changed. For that reason, the test passes, and the mutant survives.  
 
  
-
  
 
-9. negated conditional → KILLED (Line 217, Mutant 1) 
+**9. negated conditional → KILLED (Line 217, Mutant 1)**
 
 This mutant changes the combine function on line 217: 
 
@@ -106,7 +104,7 @@ By negating the if condition to if (range1 != null). The mutant negates the if s
 
  
 
-10. equal to less or equal → SURVIVED(Line 281, Mutant 7) 
+**10. equal to less or equal → SURVIVED(Line 281, Mutant 7)**
 
 This mutant changes the static max function on line 281: 
 
