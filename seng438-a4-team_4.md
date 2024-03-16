@@ -9,7 +9,7 @@
 |                |   Ding Kai Wu   |
 |                |    Chuhang Qi |
 
-# 1. Introduction
+## 1. Introduction
 
 
 # 2. Analysis of 10 Mutants of the Range class 
