@@ -13,7 +13,7 @@
 In this lab, we explored mutation testing on two classes: Range.java and DataUtilities.java. We used the PIT testing tool to see the mutation coverage on eclipse. Through the PIT test results provided, we designed new test cases to increase mutation coverage. In the second part of this lab, we explored GUI test automation, record and replay with the Selenium IDE extension for web interface testing. 
 
 # 2. Analysis of 10 Mutants of the Range class 
-
+ </br>
 ***Analysis of 10 mutants produced by pitest for Range.java class:***
 
  
