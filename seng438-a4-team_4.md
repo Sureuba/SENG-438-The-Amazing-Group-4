@@ -9,7 +9,7 @@
 |                |   Ding Kai Wu   |
 |                |    Chuhang Qi |
 
-## 1. Introduction
+# 1. Introduction
 
 
 # 2. Analysis of 10 Mutants of the Range class 
@@ -17,7 +17,7 @@
 Analysis of 10 mutants produced by pitest for Range.java class: 
 
  
-1. Negated conditional → KILLED (Line 90, Mutant 2) 
+##1. Negated conditional → KILLED (Line 90, Mutant 2) 
 
 For the Range constructor this means the condition: if (lower > upper) condition was negated into if (lower <= upper). The test case for checking the upper and lower values when a new object is constructed is testCtorValues() where it uses 50 for the lower value and 4 for the upper value. This test will not call the IllegalArgumentException class since the condition is negated and thus the change in the behaviour of the class will be detected and the mutant is killed.  
 
