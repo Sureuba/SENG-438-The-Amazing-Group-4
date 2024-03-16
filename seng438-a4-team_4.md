@@ -22,7 +22,8 @@
 For the Range constructor this means the condition: if (lower > upper) condition was negated into if (lower <= upper). The test case for checking the upper and lower values when a new object is constructed is testCtorValues() where it uses 50 for the lower value and 4 for the upper value. This test will not call the IllegalArgumentException class since the condition is negated and thus the change in the behaviour of the class will be detected and the mutant is killed.  
 
 
- 
+ </br>
+
 
 **2. Negated conditional → SURVIVED (Line 157, Mutant 2)**
 
@@ -33,7 +34,8 @@ return (b0 < this.upper && b1 >= b0);
 will return true, so the mutant, which will cause the if condition on line 157 to be false thus going into the else statement will still be true. We need to fix this by adding more branches aside the if and else that is already there and catch more instances of intersection instead of a certain 1 test.  
 
 
- 
+ </br>
+
 
 **3. Less than to greater or equal → KILLED (Line 161, Mutant 33)**
 
@@ -43,6 +45,7 @@ This mutant changes the condition in line 161 in the intersects method:
 
 The less than (<) operator is changed into a greater than or equal (>=) to operator. This mutation was detected by the the intersectHalfOverlap() and intersectWithinRange() test cases since they both go into line 161. Changing the less than sign would mean that the else statement (line 161) is automatically false due to the logical AND operator and thus will return false when the return value should be true, thus the assertTrue() method catches the mutation and kills the mutation.  
 
+</br>
 
  
 
@@ -55,7 +58,8 @@ if (!contains(value))
 The condition is replaced with a constant true value and therefore should be caught. The test cases that shouldn’t work are: constrainShouldBePositiveValue(), constrainShouldBeNegativeValue() and constrainShouldBeZero(). However since the condition is true, the code goes through the first If statement and then skips over the inner if and else if statements (since they are false) and returns the result value which would have been the same return value with or without thus the mutant ends up surviving since none of the test cases will fail due to the structure of the code.  
 
 
- 
+ </br>
+
 
 **5. Negated double field upper → KILLED  (Line 191, Mutant 1)**
 
@@ -65,7 +69,8 @@ result = this.upper;
 
 By negating the this.upper into -this.upper. The mutant was caught by the constrainShouldBeUpperBoundaryValue() test case which takes in a value of a 100 and goes into the first if branch and then the second if branch. Since the mutation negates the result, it catches the error with the assertEquals() method since the expected result was 10 and the mutated result is -10.  
 
- 
+ </br>
+
 
 
 **6. Negated double field lower → SURVIVED (Line 194, Mutant 1)**
@@ -76,6 +81,7 @@ result = this.lower;
 
 By negating the this.lower into -this.lower. The mutant is not caught by the constrainShouldBeLowerBoundaryValue() test case which takes in a value of a -50 and goes into the first if branch and then the nested else if branch. In the constrainShouldBeLowerBoundaryValue() method, we used exRange2 which is a test range we created from 0 to 10. Since the mutation negates the result = this.lower line, it does not catch the error because the lower boundary in exRange2 is 0 and negating 0, still results in 0. Therefore, the assertEquals() method does not catch the error, and the test passes, even though it should not. To fix this issue, we created another test case where the range’s lower boundary is not 0. 
 
+</br>
 
 
 
@@ -88,6 +94,7 @@ return result;
 By incrementing the result variable into ++result. The mutant pre-increments the result variable. This means that in the constrain function of the Range class, the result variable is incremented before it gets returned. This causes the test cases for constrain in RangeTest.java to fail because the assertEquals() function catches the error and is able to see that the value has been changed. For that reason, the failure is detected, and the mutant is killed.  
 
  
+</br>
 
  
 **8. Incremented (a++) double local variable number 3 → SURVIVED (Line 197, Mutant 4)**
@@ -98,7 +105,8 @@ return result;
 
 By incrementing the result variable into result++. The mutant post-increments the result variable. This means that in the constrain function of the Range class, the result variable is incremented after it gets returned. This allows the test cases for constrain in RangeTest.java to pass because the increment happens after the return, so the tests are not able to catch that the return value has been altered. The assertEquals() function does not catch the error and is not able to see that the value has been changed. For that reason, the test passes, and the mutant survives.  
 
- 
+ </br>
+
  
 
 **9. negated conditional → KILLED (Line 217, Mutant 1)**
@@ -110,6 +118,7 @@ if (range1 == null) {
 By negating the if condition to if (range1 != null). The mutant negates the if statement. This means that in the combine function of the Range class, if range1 is actually null, it will not go into the first if  statement after the mutation and that would cause the function to return the wrong range. The combinecombineIgnoringNaNFirstNullTest() test ensures this test fails because it ensures that if the first range (range1) is null, the second range (range2) should be retuned. The assertEquals() catches the failure. Thus, the mutant gets killed. 
 
  
+</br>
 
 
 **10. equal to less or equal → SURVIVED(Line 281, Mutant 7)**
