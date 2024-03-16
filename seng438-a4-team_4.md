@@ -14,7 +14,7 @@
 
 # 2. Analysis of 10 Mutants of the Range class 
 
-Analysis of 10 mutants produced by pitest for Range.java class: 
+***Analysis of 10 mutants produced by pitest for Range.java class:***
 
  
 **1. Negated conditional → KILLED (Line 90, Mutant 2)**
