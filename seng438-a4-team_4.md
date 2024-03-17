@@ -142,7 +142,7 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
  </br>
  <img width="872" alt="Screenshot 2024-03-16 at 11 41 42 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/7ba80278-7ca3-4c23-a082-e2957e5b02c0">
 
-Below are the new test cases which were added to RangeTest.java the test suite in order to kill surviving mutants. 
+**Below are the new test cases which were added to RangeTest.java the test suite in order to kill surviving mutants:**
 </br>
 
 **TESTs**: testErrorMsg()  
