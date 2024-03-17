@@ -137,23 +137,23 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 # 4. Analysis drawn on the effectiveness of each of the test classes
 Below are the new test cases which were added to the test suite in order to kill surviving mutants. 
 
-TESTs: constrainShouldBeLowerBoundaryValue()
+TESTs: constrainShouldBeLowerBoundaryValue()   </br>
 KILLED: Mutant 1 on line 194
-
-TESTs: intersectsFromLowerBoundary()
+ </br>
+TESTs: intersectsFromLowerBoundary()  </br>
        intersectsAtUpperBoundary()
-KILLED:  
+KILLED:   </br>
        Mutants 13 and 17 on Line 157
        Mutants 3, 22, 25, 32 and 33 on Line 158
        Mutants 3, 32 and 34 on line 161
-
-TESTs: doesNotIntersectBelowLB()
-       doesNotIntersectAboveUB()
-KILLED: 
+ </br>
+TESTs: doesNotIntersectBelowLB() 
+       doesNotIntersectAboveUB()  </br>
+KILLED:  </br>
        Mutants 2, 3, 4, 5, 7, 8, 10, and 11 on Line 157
        Mutants 2, 5, 8, 10, 13, 16, 19 and 21 Line 158
        Mutants 2, 6, 11, 14, 15, 19, 22, 25, and 27 on Line 161
-
+ </br>
 TESTs:
 KILLED:
 
