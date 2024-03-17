@@ -144,6 +144,10 @@ Another type of equivalent mutants is the negated conditional mutations where th
 
 Another common mutant was one that replaced the conditional statements with constant true or false, this was an easy fix and decreased our mutation score accuracy due to there being a lack of variety in the test cases with different equivalence inputs. The constant true or false can be easily killed with assertTrue or assertFalse lines in the new test cases. 
 
+The mutations with the message "replaced boolean return with true" means that we had no false tests for that method when we were testing. When testing this was an easy equivalent mutant to fix since it just meant we had to test for the false of the condition that did not kill a constant true or false mutant. 
+
+For post increment or decrement mutants we found that using the method and then checking the values of the class fields to see if they are the same would kill the mutants. 
+
 # 6. A discussion of what could have been done to improve the mutation score of the test suites
 
 # 7. Why do we need mutation testing? Advantages and disadvantages of mutation testing
