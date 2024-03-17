@@ -154,8 +154,7 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 **TESTs**: intersectsFromLowerBoundary() 
        intersectsAtUpperBoundary()        
 </br>**KILLED**:   
-       Mutants 13 and 17 on Line 157
-       Mutants 3, 22, 25, 32 and 33 on Line 158
+       Mutants 25 and 12 on Line 158
        Mutants 3, 32 and 34 on line 161
        
  </br>
@@ -163,8 +162,7 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 **TESTs**:decimalPositiveIntersection()
        decimalNotIntersected()        
 </br>**KILLED**:  
-       Mutants 15, 18 and 19 on Line 157
-       Mutants 31, 32, 33 and 34 on Line 158
+       Mutants 18 on Line 157
        Mutants 47 and 50 on line 161
        
 </br>
