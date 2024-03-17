@@ -137,7 +137,12 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
  <img width="862" alt="OG" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/911b4a1b-0ff6-4fc6-afe9-54f88f588e56">
 
 # 4. Analysis drawn on the effectiveness of each of the test classes
-Below are the new test cases which were added to the test suite in order to kill surviving mutants. 
+
+**PIT Test Mutation Coverage for Range (New)**
+ </br>
+ <img width="872" alt="Screenshot 2024-03-16 at 11 41 42 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/7ba80278-7ca3-4c23-a082-e2957e5b02c0">
+
+Below are the new test cases which were added to RangeTest.java the test suite in order to kill surviving mutants. 
 </br>
 
 **TESTs**: testErrorMsg()  
