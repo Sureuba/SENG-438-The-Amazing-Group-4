@@ -138,15 +138,15 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 Below are the new test cases which were added to the test suite in order to kill surviving mutants. 
 </br>
 
-**TESTs**: testErrorMsg()   </br>
+**TESTs**: testErrorMsg()  
 **KILLED**: Mutant 3, 4, 5, 8 and 9 on Line 91
         Mutant 4, 5, 6, 7, 10 and 11 on Line 92
 
  </br>
  
 **TESTs**: intersectsFromLowerBoundary() 
-       intersectsAtUpperBoundary()  </br>       
-**KILLED**:   </br>
+       intersectsAtUpperBoundary()        
+**KILLED**:   
        Mutants 13 and 17 on Line 157
        Mutants 3, 22, 25, 32 and 33 on Line 158
        Mutants 3, 32 and 34 on line 161
@@ -154,8 +154,8 @@ Below are the new test cases which were added to the test suite in order to kill
  </br>
  
 **TESTs**:decimalPositiveIntersection()
-       decimalNotIntersected()  </br>       
-**KILLED**:   </br>
+       decimalNotIntersected()        
+**KILLED**:  
        Mutants 15, 18 and 19 on Line 157
        Mutants 31, 32, 33 and 34 on Line 158
        Mutants 47 and 50 on line 161
@@ -163,20 +163,20 @@ Below are the new test cases which were added to the test suite in order to kill
 </br>
 
 **TESTs**: doesNotIntersectBelowLB() 
-       doesNotIntersectAboveUB()  </br>
-**KILLED**:  </br>
+       doesNotIntersectAboveUB()  
+**KILLED**:  
        Mutants 2, 3, 4, 5, 7, 8, 10, and 11 on Line 157
        Mutants 2, 5, 8, 10, 13, 16, 19 and 21 Line 158
        Mutants 2, 6, 11, 14, 15, 19, 22, 25, and 27 on Line 161
 
 </br>
 
-**TESTs**: constrainShouldBeLowerBoundaryValue()   </br>
+**TESTs**: constrainShouldBeLowerBoundaryValue()   
 **KILLED**: </br>Mutant 1 on line 194
 
  </br>
  
-**TESTs**: combineTwoDifferentRanges()   </br>
+**TESTs**: combineTwoDifferentRanges() 
 **KILLED**: </br>Mutant 3 on line 220
 
 </br>
@@ -184,8 +184,8 @@ Below are the new test cases which were added to the test suite in order to kill
 **TESTs**: scaleTestLessThanZeroFactor()
        scaleTestZeroFactor()
        scaleTestWithPosFractionScale()
-       scaleTestWithPositiveScale()  </br>
-**KILLED**: </br>Mutant 1, 2, 7, 9, 13 and 15 on Line 410
+       scaleTestWithPositiveScale() 
+**KILLED**: Mutant 1, 2, 7, 9, 13 and 15 on Line 410
 
  </br>
  
