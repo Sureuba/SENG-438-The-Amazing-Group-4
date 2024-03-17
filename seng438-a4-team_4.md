@@ -135,6 +135,28 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 
 
 # 4. Analysis drawn on the effectiveness of each of the test classes
+Below are the new test cases which were added to the test suite in order to kill surviving mutants. 
+
+TESTs: constrainShouldBeLowerBoundaryValue()
+KILLED: Mutant 1 on line 194
+
+TESTs: intersectsFromLowerBoundary()
+       intersectsAtUpperBoundary()
+KILLED:  
+       Mutants 13 and 17 on Line 157
+       Mutants 3, 22, 25, 32 and 33 on Line 158
+       Mutants 3, 32 and 34 on line 161
+
+TESTs: doesNotIntersectBelowLB()
+       doesNotIntersectAboveUB()
+KILLED: 
+       Mutants 2, 3, 4, 5, 7, 8, 10, and 11 on Line 157
+       Mutants 2, 5, 8, 10, 13, 16, 19 and 21 Line 158
+       Mutants 2, 6, 11, 14, 15, 19, 22, 25, and 27 on Line 161
+
+TESTs:
+KILLED:
+
 
 # 5. A discussion on the effect of equivalent mutants on mutation score accuracy
 Some equivalent mutants were the Incremented and Decremented mutants (post and pre) where a lot of the surviving code was because we didn't test the values after they returned a value. These equivalent mutants can be fixed using decimal values or using the class fields after they have been used once. 
