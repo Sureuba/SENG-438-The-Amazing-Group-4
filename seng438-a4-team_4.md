@@ -142,8 +142,8 @@ KILLED: Mutant 3, 4, 5, 8 and 9 on Line 91
 
  </br>
  
-TESTs: intersectsFromLowerBoundary()  </br>
-       intersectsAtUpperBoundary()
+TESTs: intersectsFromLowerBoundary() 
+       intersectsAtUpperBoundary()  </br>       
 KILLED:   </br>
        Mutants 13 and 17 on Line 157
        Mutants 3, 22, 25, 32 and 33 on Line 158
@@ -151,6 +151,15 @@ KILLED:   </br>
        
  </br>
  
+ TESTs:decimalPositiveIntersection()
+       decimalNotIntersected()  </br>       
+KILLED:   </br>
+       Mutants 15, 18 and 19 on Line 157
+       Mutants 31, 32, 33 and 34 on Line 158
+       Mutants 47 and 50 on line 161
+       
+</br>
+
 TESTs: doesNotIntersectBelowLB() 
        doesNotIntersectAboveUB()  </br>
 KILLED:  </br>
