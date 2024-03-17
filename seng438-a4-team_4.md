@@ -136,19 +136,18 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 ## Range Mutation Score Results (Original)
 <img width="953" alt="RangeOriginal" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/9d884058-aaa4-404c-a5bb-5437d3cfea42">
 
-## DataUtilitiesTest Coverage (Original)
+## PIT Test Mutation Coverage for Range (Updated)
+ <img width="872" alt="Screenshot 2024-03-16 at 11 41 42 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/7ba80278-7ca3-4c23-a082-e2957e5b02c0">
+ 
+## PIT Test Mutation Coverage for DataUtilities (Original)
 
 ![alt text](image-1.png)
 
-## Updated DataUtilitiesTest Coverage (Updated)
+## PIT Test Mutation Coverage for DataUtilities (Updated)
 
 ![alt text](image-2.png)
 
 # 4. Analysis drawn on the effectiveness of each of the test classes
-
-**PIT Test Mutation Coverage for Range (New)**
- </br>
- <img width="872" alt="Screenshot 2024-03-16 at 11 41 42 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/7ba80278-7ca3-4c23-a082-e2957e5b02c0">
 
 **Below are the new test cases which were added to RangeTest.java the test suite in order to kill surviving mutants:**
 </br>
