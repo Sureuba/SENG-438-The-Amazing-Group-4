@@ -134,12 +134,11 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 # 3. Report all the statistics and the mutation score for each test class
 **PIT Test Mutation Coverage for Range (Original)**
  </br>
- 
+ <img width="862" alt="OG" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/911b4a1b-0ff6-4fc6-afe9-54f88f588e56">
 
 # 4. Analysis drawn on the effectiveness of each of the test classes
 Below are the new test cases which were added to the test suite in order to kill surviving mutants. 
 </br>
-<img width="862" alt="OG" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/911b4a1b-0ff6-4fc6-afe9-54f88f588e56">
 
 **TESTs**: testErrorMsg()  
 </br>**KILLED**: Mutant 3, 4, 5, 8 and 9 on Line 91
