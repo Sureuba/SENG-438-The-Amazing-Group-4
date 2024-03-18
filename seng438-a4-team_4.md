@@ -239,9 +239,9 @@ SikuliX, on the other hand, uses image recognition to automate anything on the s
 
 Here's a breakdown of their advantages and disadvantages:
 
-**Selenium**
-
-# Advantages:
+## Selenium
+ 
+**Advantages:**
 
 Widely used: Large community and extensive documentation available.
 </br>
@@ -254,7 +254,7 @@ Precise control: Offers fine-grained control over web elements.
 
 </br>
 
-# Disadvantages:
+**Disadvantages:**
 
 Limited to web: Can't automate desktop applications.
 </br>
@@ -264,9 +264,9 @@ Learning curve: Understanding HTML and web development concepts can be helpful.
 
 </br>
 
-**SikuliX**
+## SikuliX
 
-Advantages:
+**Advantages:**
 
 Visually intuitive: Easy to identify elements using images.
 </br>
@@ -276,7 +276,7 @@ Fast prototyping: Quick for creating basic automation scripts.
 
 </br>
 
-Disadvantages:
+**Disadvantages:**
 
 Image dependency: Relies on image files, which can break if visuals change.
 </br>
