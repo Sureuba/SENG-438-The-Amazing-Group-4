@@ -31,7 +31,7 @@ This is another negation condition mutation for the intersects method. The test 
 
 return (b0 < this.upper && b1 >= b0); 
 
-will return true, so the mutant, which will cause the if condition on line 157 to be false thus going into the else statement will still be true. We need to fix this by adding more branches aside the if and else that is already there and catch more instances of intersection instead of a certain 1 test.  
+will return true, so the mutant, which will cause the if condition on Line 157 to be false thus going into the else statement will still be true. We need to fix this by adding more branches aside the if and else that is already there and catch more instances of intersection instead of a certain 1 test.  
 
 
  </br>
@@ -39,11 +39,11 @@ will return true, so the mutant, which will cause the if condition on line 157 t
 
 **3. Less than to greater or equal → KILLED (Line 161, Mutant 33)**
 
-This mutant changes the condition in line 161 in the intersects method: 
+This mutant changes the condition in Line 161 in the intersects method: 
 
  return (b0 < this.upper && b1 >= b0); 
 
-The less than (<) operator is changed into a greater than or equal (>=) to operator. This mutation was detected by the the intersectHalfOverlap() and intersectWithinRange() test cases since they both go into line 161. Changing the less than sign would mean that the else statement (line 161) is automatically false due to the logical AND operator and thus will return false when the return value should be true, thus the assertTrue() method catches the mutation and kills the mutation.  
+The less than (<) operator is changed into a greater than or equal (>=) to operator. This mutation was detected by the the intersectHalfOverlap() and intersectWithinRange() test cases since they both go into Line 161. Changing the less than sign would mean that the else statement (Line 161) is automatically false due to the logical AND operator and thus will return false when the return value should be true, thus the assertTrue() method catches the mutation and kills the mutation.  
 
 </br>
 
@@ -51,7 +51,7 @@ The less than (<) operator is changed into a greater than or equal (>=) to opera
 
 **4. removed conditional - replaced equality check with true → SURVIVED (Line 189, Mutant 4)**
 
-This mutation changes the constrain function, specifically the If condition on line 189:  
+This mutation changes the constrain function, specifically the If condition on Line 189:  
 
 if (!contains(value))  
 
@@ -63,7 +63,7 @@ The condition is replaced with a constant true value and therefore should be cau
 
 **5. Negated double field upper → KILLED  (Line 191, Mutant 1)**
 
-This mutant changes the constrains function line 191:	 
+This mutant changes the constrains function Line 191:	 
 
 result = this.upper; 
 
@@ -75,11 +75,11 @@ By negating the this.upper into -this.upper. The mutant was caught by the constr
 
 **6. Negated double field lower → SURVIVED (Line 194, Mutant 1)**
 
-This mutant changes the constrains function line 194:	 
+This mutant changes the constrains function Line 194:	 
 
 result = this.lower; 
 
-By negating the this.lower into -this.lower. The mutant is not caught by the constrainShouldBeLowerBoundaryValue() test case which takes in a value of a -50 and goes into the first if branch and then the nested else if branch. In the constrainShouldBeLowerBoundaryValue() method, we used exRange2 which is a test range we created from 0 to 10. Since the mutation negates the result = this.lower line, it does not catch the error because the lower boundary in exRange2 is 0 and negating 0, still results in 0. Therefore, the assertEquals() method does not catch the error, and the test passes, even though it should not. To fix this issue, we created another test case where the range’s lower boundary is not 0. 
+By negating the this.lower into -this.lower. The mutant is not caught by the constrainShouldBeLowerBoundaryValue() test case which takes in a value of a -50 and goes into the first if branch and then the nested else if branch. In the constrainShouldBeLowerBoundaryValue() method, we used exRange2 which is a test range we created from 0 to 10. Since the mutation negates the result = this.lower Line, it does not catch the error because the lower boundary in exRange2 is 0 and negating 0, still results in 0. Therefore, the assertEquals() method does not catch the error, and the test passes, even though it should not. To fix this issue, we created another test case where the range’s lower boundary is not 0. 
 
 </br>
 
@@ -87,7 +87,7 @@ By negating the this.lower into -this.lower. The mutant is not caught by the con
 
 **7. Incremented (++a) double local variable number 3 → KILLED (Line 197, Mutant 6)**
 
-This mutant changes the constrains function line 197:	 
+This mutant changes the constrains function Line 197:	 
 
 return result; 
 
@@ -99,7 +99,7 @@ By incrementing the result variable into ++result. The mutant pre-increments the
  
 **8. Incremented (a++) double local variable number 3 → SURVIVED (Line 197, Mutant 4)**
 
-This mutant changes the constrains function line 197:	 
+This mutant changes the constrains function Line 197:	 
 
 return result; 
 
@@ -111,7 +111,7 @@ By incrementing the result variable into result++. The mutant post-increments th
 
 **9. negated conditional → KILLED (Line 217, Mutant 1)**
 
-This mutant changes the combine function on line 217: 
+This mutant changes the combine function on Line 217: 
 
 if (range1 == null) { 
 
@@ -123,7 +123,7 @@ By negating the if condition to if (range1 != null). The mutant negates the if s
 
 **10. equal to less or equal → SURVIVED(Line 281, Mutant 7)**
 
-This mutant changes the static max function on line 281: 
+This mutant changes the static max function on Line 281: 
 
 if (Double.isNaN(d1)) { 
 
@@ -149,58 +149,91 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 
 # 4. Analysis drawn on the effectiveness of each of the test classes
 
+*The Mutant #s and Line #s below are based on the PIT Mutation Summary report. The report can't be included in this report. Please run the mutation test once to generate the reports.*
+
 **Below are the new test cases which were added to RangeTest.java the test suite in order to kill surviving mutants:**
-</br>
 
-**TESTs**: testErrorMsg()  
-</br>**KILLED**: Mutant 3, 4, 5, 8 and 9 on Line 91
-        Mutant 4, 5, 6, 7, 10 and 11 on Line 92
+**TESTS**: testErrorMsg() </br>
+**KILLED**: Mutant 3, 4, 5, 8 and 9 on Line 91 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutant 4, 5, 6, 7, 10 and 11 on Line 92
 
- </br>
  
-**TESTs**: intersectsFromLowerBoundary() 
-       intersectsAtUpperBoundary()        
-</br>**KILLED**:   
-       Mutants 25 and 12 on Line 158
-       Mutants 3, 32 and 34 on line 161
-       
- </br>
+**TESTS**: intersectsFromLowerBoundary() </br>
+&emsp;&emsp;&emsp;&nbsp;intersectsAtUpperBoundary() </br>
+**KILLED**: Mutants 25 and 12 on Line 158 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 3, 32 and 34 on Line 161
+
  
-**TESTs**:decimalPositiveIntersection()
-       decimalNotIntersected()        
-</br>**KILLED**:  
-       Mutants 18 on Line 157
-       Mutants 47 and 50 on line 161
-       
-</br>
+**TESTS**: decimalPositiveIntersection() </br>
+&emsp;&emsp;&emsp;&nbsp;decimalNotIntersected() </br>
+**KILLED**: Mutants 18 on Line 157 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 47 and 50 on Line 161
 
-**TESTs**: doesNotIntersectBelowLB() 
-       doesNotIntersectAboveUB()  
-</br>**KILLED**:  
-       Mutants 2, 3, 4, 5, 7, 8, 10, and 11 on Line 157
-       Mutants 2, 5, 8, 10, 13, 16, 19 and 21 Line 158
-       Mutants 2, 6, 11, 14, 15, 19, 22, 25, and 27 on Line 161
+**TESTS**: doesNotIntersectBelowLB() </br>
+&emsp;&emsp;&emsp;&nbsp;doesNotIntersectAboveUB() </br>
+**KILLED**: Mutants 2, 3, 4, 5, 7, 8, 10, and 11 on Line 157 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 2, 5, 8, 10, 13, 16, 19 and 21 Line 158 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 2, 6, 11, 14, 15, 19, 22, 25, and 27 on Line 161 </br>
 
-</br>
-
-**TESTs**: constrainShouldBeLowerBoundaryValue()   
-</br>**KILLED**: </br>Mutant 1 on line 194
-
- </br>
+**TESTS**: constrainShouldBeLowerBoundaryValue() </br>
+**KILLED**: Mutant 1 on Line 194
  
-**TESTs**: combineTwoDifferentRanges() 
-</br>**KILLED**: </br>Mutant 3 on line 220
+**TESTS**: combineTwoDifferentRanges() </br>
+**KILLED**: Mutant 3 on Line 220
 
-</br>
+**TESTS**: scaleTestLessThanZeroFactor() </br>
+&emsp;&emsp;&emsp;&nbsp;scaleTestZeroFactor() </br>
+&emsp;&emsp;&emsp;&nbsp;scaleTestWithPosFractionScale() </br>
+&emsp;&emsp;&emsp;&nbsp;scaleTestWithPositiveScale() </br>
+**KILLED**: Mutant 1, 2, 7, 9, 13 and 15 on Line 410
 
-**TESTs**: scaleTestLessThanZeroFactor()
-       scaleTestZeroFactor()
-       scaleTestWithPosFractionScale()
-       scaleTestWithPositiveScale() 
-</br>**KILLED**: Mutant 1, 2, 7, 9, 13 and 15 on Line 410
+**Below are the new test cases which were added to DataUtilitiesTest.java the test suite in order to kill surviving mutants:**
 
- </br>
- 
+**TESTS**: equalLoopMutationTest() </br>
+**KILLED**: Mutant 13 on Line 85 </br>
+
+**TESTS**: cloneDifferentLengthTest() </br>
+**KILLED**: Mutant 1 on Line 106 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 4 and 5 on Line 107 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 1 and 2 on Line 108 </br>
+
+**TESTS**: calculateColumnTotalInvalidRowTest() </br>
+**KILLED**: Mutant 17 on Line 127 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 3 on Line 154 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 1 and 2 on Line 108 </br>
+
+**TESTS**: calculateColumnTotalEmptyRowsTest() </br>
+**KILLED**: Mutant 3 and 5 on Line 158 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 3 on Line 154 </br>
+
+**TESTS**: calculateRowTotalInvalidColTest() </br>
+**KILLED**: Mutant 17 on Line 178 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 2 on Line 179 </br>
+
+**TESTS**: calculateRowTotalEmptyColTest() </br>
+**KILLED**: Mutant 3 and 5 on Line 209 </br>
+
+**TESTS**: createNumberArray2DNaNTest() </br>
+**KILLED**: Mutant 3 Line 244 </br>
+
+**TESTS**: getCumulativePercentagesInvalidItemTest() </br>
+**KILLED**: Mutant 16 Line 265 </br>
+&emsp;&emsp;&emsp;&ensp;&nbsp;Mutants 16 on Line 272 </br>
+
+**TESTS**: calculateColumnTotalNullDataTest() </br>
+**KILLED**: Mutant 1 Line 124 </br>
+
+**TESTS**: calculateColumnTotalNullParamTest() </br>
+**KILLED**: Mutant 1 Line 150 </br>
+
+**TESTS**: calculateRowTotalNullParamTest() </br>
+**KILLED**: Mutant 1 Line 175 </br>
+
+**TESTS**: calculateRowTotalNullDataTest() </br>
+**KILLED**: Mutant 1 Line 201 </br>
+
+**TESTS**: getCumulativePercentagesEmptyDataTest() </br>
+**KILLED**: Mutant 1 Line 262 </br>
 
 # 5. A discussion on the effect of equivalent mutants on mutation score accuracy
 Some equivalent mutants were the Incremented and Decremented mutants (post and pre) where a lot of the surviving code was because we didn't test the values after they returned a value. These equivalent mutants can be fixed using decimal values or using the class fields after they have been used once. 
@@ -225,9 +258,19 @@ Mutation testing also have some disadvantages. One disadvantage is the "waste" o
 
 # 8. Explain your SELENUIM test case design process
 
+We designed the Selenium test cases following a similar process as in assignment 1. We will be using exploratory testing to test https://www.ebay.ca/ for 8 functionalities. Since ebay is a popular e-commerce website, our test cases will be designed around how a customer may interact with ebay when they want to purchase an item. The test cases include searching for an item, add item to cart, sign in to user account, etc. We tried to design each function with a valid and invalid input, but it's not always possible. For example, to test the filter function there is not invalid inputs on ebay. This is because all the filter labels are already generated by the website.
+
 # 9. Explain the use of assertions and checkpoints
 
-# 10. how did you test each functionality with different test data
+**Please be aware that some test cases require specific pre-conditions to be met. Test will fail otherwise. </br>
+To change account address the user needs to be logged in. </br>
+In order for the Log In Valid test case to pass, the user account name must match the account name specified in the assertion.**
+
+After each test, there is an assert text command. This command _Confirm that the text of an element contains the provided value. The test will stop if the assert fails._ Each assert text command has a target and a value. By specifying what to look for after each test, we are able to determine if the test passed or failed. All other commands have built in pass/fail checks and is handled by Selenium so we don't need to create extra assertions and checkpoints.
+
+# 10. How did you test each functionality with different test data
+
+The value field allows us to test each functionality with different test data. As mentioned above, it is not always possible to test for invalid inputs. Some tests also requires us to click on a different location on the website instead of different inputs. However, we are able to use this function for some of the tests. For example, in Change Account Address Valid test, we input a valid address under the value field. In Change Account Address Invalid test, the only change was to input an invalid address using the same field.
 
 # 11. Discuss advantages and disadvantages of Selenium vs. Sikulix
 
@@ -239,22 +282,18 @@ SikuliX, on the other hand, uses image recognition to automate anything on the s
 
 Here are advantages and disadvantages of each IDE:
 
- **Selenium**
+**Selenium**
  
 Advantages:
-
+</br>
 *Widely used: Large community and extensive documentation available.
 </br>
 *Cross-browser compatibility: Works with various web browsers.
 </br>
 *Language support: Supports multiple programming languages.
 
-
-
-</br>
-
 Disadvantages:
-
+</br>
 *Limited to web: Can't automate desktop applications.
 </br>
 *Locator maintenance: Relies on HTML structure, which can change, requiring script updates.
@@ -262,22 +301,19 @@ Disadvantages:
 *Learning curve: Understanding HTML and web development concepts can be helpful.
 
 </br>
-</br>
 
- **SikuliX**
+**SikuliX**
 
 Advantages:
-
+</br>
 *Visually intuitive: Easy to identify elements using images.
 </br>
 *Desktop and web: Automates both web applications and desktop software.
 </br>
 *Fast prototyping: Quick for creating basic automation scripts.
 
-</br>
-
 Disadvantages:
-
+</br>
 *Image dependency: Relies on image files, which can break if visuals change.
 </br>
 *Less precise: Image recognition might not always be accurate, leading to errors.
@@ -285,10 +321,13 @@ Disadvantages:
 *Limited functionality: Lacks advanced features for complex web automation.
 
 # 12. How the team work/effort was divided and managed
-The teamwork was divided fairly, and gave everyone a chance to gain as much as we could from this lab. For part 1, 2 members worked on mutation testing for the Range.java class and the other two members conducted mutation testing for the DataUtilities.java class. Through this division, everyone got the opportunity to run PIT tests and increase mutation coverage by creating new test cases. For part 2, each group member (the 4 of us) all completed 2 tests on the Selenium IDE for the ebay website. This ensured an even and managble split between tasks for each group member. 
 
-# Difficulties encountered, challenges overcome, and lessons learned
-In this lab, we used two new software tools: The PIT test mutation tool on Eclipse and the Selenium IDE extesnion. It was challenging using these new softwares because we had never used them before. More than the muation testing itself, waiting for the PIT test to load was a struggle because it would take so long. We used external resources to learn how to use the Selenium IDE and were able to ocvercome the challenge of utilizing a new testing tool. Another challenge was understanding what all of the mutations even meant when running the PIT test. Some of them were very confusing and so we did not know hoe to write tests to kill those specific mutants. The biggest challenge with this lab was how time consuming it was. The pit tests took way too long to run, but through conducting this lab, we leanrd how to use 2 new software testing tools.
+The teamwork was divided fairly, and gave everyone a chance to gain as much as we could from this lab. For part 1, Uruba and Naina worked on mutation testing for the Range.java class and Questions 1 - 5. Bill and Mike conducted mutation testing for the DataUtilities.java class, and questions 3, 4, 6 and 7. Through this division, everyone got the opportunity to run PIT tests and increase mutation coverage by creating new test cases. For part 2, each group member (the 4 of us) all completed 2 tests on the Selenium IDE for the ebay website. Bill and Mike worked on questions 8 - 10. Uruba and Naina worked on the rest of questions. This also give each member a chance to gain experience with GUI testing. This ensured an even and manageable split between tasks for each group member. 
 
-# Comments/feedback on the lab itself
+# 13. Difficulties encountered, challenges overcome, and lessons learned
+
+In this lab, we used two new software tools: The PIT test mutation tool on Eclipse and the Selenium IDE extension. It was challenging using these new softwares because we had never used them before. More than the mutation testing itself, waiting for the PIT test to load was a struggle because it would take so long. We used external resources to learn how to use the Selenium IDE and were able to overcome the challenge of utilizing a new testing tool. Another challenge was understanding what all of the mutations even meant when running the PIT test. Some of them were very confusing and so we did not know hoe to write tests to kill those specific mutants. The biggest challenge with this lab was how time consuming it was. As for Selenium, the recording of mouse movement caused some problems. Hover over an element and using the mouse to select an auto filled cell would cause the test to fail. We are not sure what caused this issue, and it was fixed by using keyboard input or deleting some unnecessary mouse movements. Through conducting this lab, we learned how to use 2 new software testing tools.
+
+# 14. Comments/feedback on the lab itself
+
 As written above, this lab was extremely time consuming. Especially part 1 of the lab, writing tests was not the issue, it was how long it took to load the PIT mutation tests. Increasing mutation coverage by 10% is very hard to do when it takes 30 minutes just to load the pit test summary. Our feedback would be to shorten this lab or ask us to increase the coverage by less, as getting it up 10% takes very long. Also, there was no guidance on how to use the Selenium IDE tool, we had to learn from external resources, so an example on how to use the tool would have been helpful. Other than the overwhelming time consuming aspect of this lab, we enjoyed learning how to use these tools and we now know how to make better tests for a certain class. We also enjoyed using Selenium IDE for GUI testing as it was something we had not done before, and it was quite enjoyable to do. 

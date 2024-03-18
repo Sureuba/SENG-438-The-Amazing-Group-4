@@ -1,0 +1,897 @@
+{
+  "id": "e1288108-918d-41dc-9e9f-dcefaf8d23fa",
+  "version": "2.0",
+  "name": "SENG438-A4",
+  "url": "https://www.ebay.ca",
+  "tests": [{
+    "id": "b9f2ee4e-c468-48fa-9d6b-6ee476803f8d",
+    "name": "Search for Item Valid",
+    "commands": [{
+      "id": "367eb323-d582-4791-93fd-44a8a43847cc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13f63963-4f92-4ed1-8332-d51ae0615549",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e021da81-0674-470e-b143-b786a6cc1673",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Exponent Microport Mouse Pad With Gel Wrist - EXM56404"
+    }, {
+      "id": "bf874175-6651-4a96-873f-1655e97b0c4e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9098c1df-b10b-4807-ba00-bddbd16b27b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item4be9bc3dae .s-item__title > span",
+      "targets": [
+        ["css=#item4be9bc3dae .s-item__title > span", "css:finder"],
+        ["xpath=//li[@id='item4be9bc3dae']/div/div[2]/a/div/span", "xpath:idRelative"],
+        ["xpath=//ul/li/div/div[2]/a/div/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7351",
+      "windowTimeout": 2000
+    }, {
+      "id": "07893334-9ee7-4879-87a8-dd11721f797b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7351}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6f5de07-64f7-4c12-a567-9d3947430ddb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.x-item-title__mainTitle > .ux-textspans",
+      "targets": [
+        ["css=.x-item-title__mainTitle > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Exponent Microport Mouse Pad With Gel Wrist - EXM56404')]", "xpath:innerText"]
+      ],
+      "value": "Exponent Microport Mouse Pad With Gel Wrist - EXM56404"
+    }]
+  }, {
+    "id": "0cd8205e-f8bc-4bb1-b49e-91109654575e",
+    "name": "Search for Item Invalid",
+    "commands": [{
+      "id": "dd5a8eb0-7289-4dd0-bf9e-4c3667b7991b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d73f923c-d6a1-47e1-8b65-9d204af5b488",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "015fe3b9-cd9e-4a88-b372-48492c904302",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "SENG438"
+    }, {
+      "id": "a10e85e3-f98b-4864-86c6-593fb26043e4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d2c96163-ecb9-4e21-98cb-6377ca37002e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.srp-save-null-search__heading",
+      "targets": [
+        ["css=.srp-save-null-search__heading", "css:finder"],
+        ["xpath=//div[@id='srp-river-results']/ul/li/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'No exact matches found')]", "xpath:innerText"]
+      ],
+      "value": "No exact matches found"
+    }]
+  }, {
+    "id": "009614f8-35c9-4d38-94e4-19a3626c45af",
+    "name": "Checkout Not Logged In",
+    "commands": [{
+      "id": "c2912b74-467a-43b9-a2cb-0f2ee700ce0d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "748fd8c5-1dc3-4b91-a20c-7cb996998f9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77e637c4-5640-4da6-87ef-7e8be808fef9",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Exponent Microport Mouse Pad With Gel Wrist - EXM56404"
+    }, {
+      "id": "08a1dafe-4241-449e-b4af-8d1941b3cfe1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a647246e-7d01-46f3-9dd1-7d69a5348466",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item4be9bc3dae .s-item__title > span",
+      "targets": [
+        ["css=#item4be9bc3dae .s-item__title > span", "css:finder"],
+        ["xpath=//li[@id='item4be9bc3dae']/div/div[2]/a/div/span", "xpath:idRelative"],
+        ["xpath=//ul/li/div/div[2]/a/div/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7465",
+      "windowTimeout": 2000
+    }, {
+      "id": "8bcbe888-0f33-4406-a550-b7be3afe7618",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7465}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f0d7d7b-f552-41c8-a82c-36f1d9123263",
+      "comment": "",
+      "command": "click",
+      "target": "css=#binBtn_btn_1 .ux-call-to-action__text",
+      "targets": [
+        ["css=#binBtn_btn_1 .ux-call-to-action__text", "css:finder"],
+        ["xpath=//a[@id='binBtn_btn_1']/span/span", "xpath:idRelative"],
+        ["xpath=//a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c62fc0f7-ede7-4a89-af44-b925474e8a3e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=welcome-msg",
+      "targets": [
+        ["id=welcome-msg", "id"],
+        ["css=#welcome-msg", "css:finder"],
+        ["xpath=//h1[@id='welcome-msg']", "xpath:attributes"],
+        ["xpath=//main[@id='mainContent']/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
+      ],
+      "value": "Welcome"
+    }]
+  }, {
+    "id": "ee31615a-3617-43a5-a16d-39ccd36128b2",
+    "name": "Log In Valid",
+    "commands": [{
+      "id": "6c334eac-0f9d-4a78-a4c7-b0733cc43755",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "194435ac-4268-4036-bc5e-80ea926743e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=#gh-ug > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//span[@id='gh-ug']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://signin.ebay.ca/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.ca%2F')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ed21b50-b2a6-44ba-a4c1-f025739673b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=signin_ggl_btn",
+      "targets": [
+        ["id=signin_ggl_btn", "id"],
+        ["css=#signin_ggl_btn", "css:finder"],
+        ["xpath=//button[@id='signin_ggl_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue with Google')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81fa1d88-b0a4-4da9-baa9-fb68c60c7d6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.JDAKTe:nth-child(1) .wLBAL",
+      "targets": [
+        ["css=.JDAKTe:nth-child(1) .wLBAL", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf50624d-70df-4da2-aabe-82e9644990c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi D!')]", "xpath:innerText"]
+      ],
+      "value": "Hi D!"
+    }]
+  }, {
+    "id": "f31059f9-dfe5-4726-b4b8-1f3ab624cb26",
+    "name": "Log In Invalid",
+    "commands": [{
+      "id": "57afa396-7d64-4ca4-86c4-faf660287f84",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "032646a2-e1e7-4aa0-a8f6-9aa7b6771827",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=#gh-ug > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//span[@id='gh-ug']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://signin.ebay.ca/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.ca%2F')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee0bc88a-c80a-4620-9fe9-b876bf0ccc1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=switch-account-anchor",
+      "targets": [
+        ["id=switch-account-anchor", "id"],
+        ["css=#switch-account-anchor", "css:finder"],
+        ["xpath=//a[@id='switch-account-anchor']", "xpath:attributes"],
+        ["xpath=//span[@id='switch-account-link']/a", "xpath:idRelative"],
+        ["xpath=//span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba7ff0a4-8d4f-471a-9ef3-6ef82ff837af",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a01ca79-f614-44c2-84f0-12e638db5fb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wu.dingkai@hotmail.com"
+    }, {
+      "id": "7c5c336b-a517-4fec-8b53-5c613e9b8492",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bbaa4aff-547c-4ef0-aff2-52c5c4b6df08",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=signin-error-msg",
+      "targets": [
+        ["id=signin-error-msg", "id"],
+        ["css=#signin-error-msg", "css:finder"],
+        ["xpath=//p[@id='signin-error-msg']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/div/div/div/span[2]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "We couldn't find this eBay account."
+    }]
+  }, {
+    "id": "36047fdc-f6f0-4cfd-b380-3c64554a35c0",
+    "name": "Checkout Logged In",
+    "commands": [{
+      "id": "7d4300c2-35ab-4362-bc8d-9ed1d7be2045",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15fe6aa8-e4e9-4a2e-9fba-007283f8dc51",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caace1f2-7339-4e44-aaf3-5d2a7f026df1",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Exponent Microport Mouse Pad With Gel Wrist - EXM56404"
+    }, {
+      "id": "6eba3de9-f3e8-4604-bd89-b645d4e658c9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9ff2deee-1ac6-4557-aa15-8207f436fb72",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item4be9bc3dae .s-item__title > span",
+      "targets": [
+        ["css=#item4be9bc3dae .s-item__title > span", "css:finder"],
+        ["xpath=//li[@id='item4be9bc3dae']/div/div[2]/a/div/span", "xpath:idRelative"],
+        ["xpath=//ul/li/div/div[2]/a/div/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7465",
+      "windowTimeout": 2000
+    }, {
+      "id": "5531246d-0c54-469f-a17e-6f17e87a4d76",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7465}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eec85939-9baa-4258-a262-9ddb88bde163",
+      "comment": "",
+      "command": "click",
+      "target": "css=#binBtn_btn_1 .ux-call-to-action__text",
+      "targets": [
+        ["css=#binBtn_btn_1 .ux-call-to-action__text", "css:finder"],
+        ["xpath=//a[@id='binBtn_btn_1']/span/span", "xpath:idRelative"],
+        ["xpath=//a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ba71ee8-2c99-4b5d-beed-bf31d0470896",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn > span",
+      "targets": [
+        ["css=.btn > span", "css:finder"],
+        ["xpath=//form[@id='page-form']/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Confirm and pay')]", "xpath:innerText"]
+      ],
+      "value": "Confirm and pay"
+    }]
+  }, {
+    "id": "42963f97-a1d9-451c-b026-b31f900eaf47",
+    "name": "Change Account Address Invalid",
+    "commands": [{
+      "id": "4bc810b4-011e-4713-b29f-385f3cea8f6c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "769fa64d-ba33-4353-a3a0-91c2ee8de3dd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#gh-ug > b:nth-child(1)",
+      "targets": [
+        ["css=#gh-ug > b:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'D')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e57c346-0464-4171-9e39-f9c4c75c49f3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#gh-ug > b:nth-child(1)",
+      "targets": [
+        ["css=#gh-ug > b:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'D')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "033a71db-3667-45de-9648-93c4f860b174",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gh-eb-arw:nth-child(2)",
+      "targets": [
+        ["css=.gh-eb-arw:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b56ca311-d1dc-4881-b199-bf48a10f9bc4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gh-eb-arw:nth-child(2)",
+      "targets": [
+        ["css=.gh-eb-arw:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a2a498-2a38-42b8-b598-3b2cad992c64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "889bae56-3fab-4ba4-ba9d-96c5138edf28",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-ADDR",
+      "targets": [
+        ["id=account-settings-link-ADDR", "id"],
+        ["linkText=Addresses", "linkText"],
+        ["css=#account-settings-link-ADDR", "css:finder"],
+        ["xpath=//a[contains(text(),'Addresses')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-ADDR']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas/addresses')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Addresses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be85841e-8aa8-40ec-99fb-66a14ae720ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primaryShipAddress .fake-btn",
+      "targets": [
+        ["css=.primaryShipAddress .fake-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mainContent']/div/div/div[2]/div/div/div/div/div/div/div/section/div/div/div[2]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://settings3.ebay.ca/address/display?type=SHIPPING')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76ed51cc-94d0-4c9a-9c8f-ed94fa0e8975",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-address-SHIPPING",
+      "targets": [
+        ["id=edit-address-SHIPPING", "id"],
+        ["linkText=Edit", "linkText"],
+        ["css=#edit-address-SHIPPING", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[@id='edit-address-SHIPPING']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/address/edit?q=01000700000020cc37602bb83a9eb49b2df3f4dc9c02eb69bcadb076dda6cf7ba164e010cad5c5')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cdf3dfd-e720-4459-8a6c-7fd93875d6a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a814bb1-36e0-4139-98a8-870ef99f004f",
+      "comment": "",
+      "command": "click",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac275e18-d217-4342-b881-415ce2014a9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": "999 Somerglen Close Sw"
+    }, {
+      "id": "019e9171-03de-46cb-9326-af14c1c0d79f",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-address-btn",
+      "targets": [
+        ["id=save-address-btn", "id"],
+        ["css=#save-address-btn", "css:finder"],
+        ["xpath=//button[@id='save-address-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[6]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cffcd19-7b78-4dfa-9333-c69a1a621103",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.head",
+      "targets": [
+        ["css=.head", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Did you mean this?')]", "xpath:innerText"]
+      ],
+      "value": "Did you mean this?"
+    }]
+  }, {
+    "id": "f2636a67-37bd-4da9-98bc-69c9176c5995",
+    "name": "Change Account Address Valid",
+    "commands": [{
+      "id": "aadcf868-6805-43d1-b068-60aea3f3fbc3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f8c97d0-737c-4df9-a2f3-e69cb8eb7162",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#gh-ug > b:nth-child(1)",
+      "targets": [
+        ["css=#gh-ug > b:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'D')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f6da998-09e0-4c0d-9b46-b135624cce36",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#gh-ug > b:nth-child(1)",
+      "targets": [
+        ["css=#gh-ug > b:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'D')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e152bb-69d7-43d6-8545-5ad1289fd755",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gh-eb-arw:nth-child(2)",
+      "targets": [
+        ["css=.gh-eb-arw:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fa54c3c-ad21-4fbf-9a5e-0d6d0f64adab",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gh-eb-arw:nth-child(2)",
+      "targets": [
+        ["css=.gh-eb-arw:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32728bcf-09a3-48d3-8e3f-87608d522a72",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0309a68a-1d15-4727-8833-a7d7c927d611",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-ADDR",
+      "targets": [
+        ["id=account-settings-link-ADDR", "id"],
+        ["linkText=Addresses", "linkText"],
+        ["css=#account-settings-link-ADDR", "css:finder"],
+        ["xpath=//a[contains(text(),'Addresses')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-ADDR']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas/addresses')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Addresses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c762832c-47e3-4e14-b9a3-258756b4172b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primaryShipAddress .fake-btn",
+      "targets": [
+        ["css=.primaryShipAddress .fake-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mainContent']/div/div/div[2]/div/div/div/div/div/div/div/section/div/div/div[2]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://settings3.ebay.ca/address/display?type=SHIPPING')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dc850a4-0b3c-42de-ae30-92081f03f2be",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-address-SHIPPING",
+      "targets": [
+        ["id=edit-address-SHIPPING", "id"],
+        ["linkText=Edit", "linkText"],
+        ["css=#edit-address-SHIPPING", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[@id='edit-address-SHIPPING']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/address/edit?q=01000700000020cc37602bb83a9eb49b2df3f4dc9c02eb69bcadb076dda6cf7ba164e010cad5c5')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1b7db23-c987-497b-9202-b96fb43ec778",
+      "comment": "",
+      "command": "click",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bc73d30-d53e-4075-b91e-dcf76fee523a",
+      "comment": "",
+      "command": "click",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6145b02-520a-4bdf-8ef3-c114448e2407",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": "99 Somerglen Close Sw"
+    }, {
+      "id": "00402410-e727-485c-a42b-fca308b33930",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-address-btn",
+      "targets": [
+        ["id=save-address-btn", "id"],
+        ["css=#save-address-btn", "css:finder"],
+        ["xpath=//button[@id='save-address-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[6]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4fc6712-f9d0-46df-a6e8-6b575ab2e73f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-notice__title",
+      "targets": [
+        ["css=.page-notice__title", "css:finder"],
+        ["xpath=//div[@id='mainContent']/section/div[2]/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Address changed successfully.')]", "xpath:innerText"]
+      ],
+      "value": "Address changed successfully."
+    }]
+  }],
+  "suites": [{
+    "id": "72ad829b-9255-46da-b3b9-867b7ed0de35",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b9f2ee4e-c468-48fa-9d6b-6ee476803f8d"]
+  }],
+  "urls": ["https://www.ebay.ca/"],
+  "plugins": []
+}
