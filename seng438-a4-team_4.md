@@ -247,20 +247,19 @@ Advantages:
 </br>
 *Cross-browser compatibility: Works with various web browsers.
 </br>
-Language support: Supports multiple programming languages.
-</br>
-Precise control: Offers fine-grained control over web elements.
+*Language support: Supports multiple programming languages.
+
 
 
 </br>
 
 Disadvantages:
 
-Limited to web: Can't automate desktop applications.
+*Limited to web: Can't automate desktop applications.
 </br>
-Locator maintenance: Relies on HTML structure, which can change, requiring script updates.
+*Locator maintenance: Relies on HTML structure, which can change, requiring script updates.
 </br>
-Learning curve: Understanding HTML and web development concepts can be helpful.
+*Learning curve: Understanding HTML and web development concepts can be helpful.
 
 </br>
 </br>
@@ -269,23 +268,21 @@ Learning curve: Understanding HTML and web development concepts can be helpful.
 
 Advantages:
 
-Visually intuitive: Easy to identify elements using images.
+*Visually intuitive: Easy to identify elements using images.
 </br>
-Desktop and web: Automates both web applications and desktop software.
+*Desktop and web: Automates both web applications and desktop software.
 </br>
-Fast prototyping: Quick for creating basic automation scripts.
+*Fast prototyping: Quick for creating basic automation scripts.
 
 </br>
 
 Disadvantages:
 
-Image dependency: Relies on image files, which can break if visuals change.
+*Image dependency: Relies on image files, which can break if visuals change.
 </br>
-Less precise: Image recognition might not always be accurate, leading to errors.
+*Less precise: Image recognition might not always be accurate, leading to errors.
 </br>
-Maintenance challenges: Scripts can become brittle if visuals change frequently.
-</br>
-Limited functionality: Lacks advanced features for complex web automation.
+*Limited functionality: Lacks advanced features for complex web automation.
 
 # 12. How the team work/effort was divided and managed
 
