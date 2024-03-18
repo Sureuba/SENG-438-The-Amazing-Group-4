@@ -243,9 +243,9 @@ Here are advantages and disadvantages of each IDE:
  
 Advantages:
 
-Widely used: Large community and extensive documentation available.
+*Widely used: Large community and extensive documentation available.
 </br>
-Cross-browser compatibility: Works with various web browsers.
+*Cross-browser compatibility: Works with various web browsers.
 </br>
 Language support: Supports multiple programming languages.
 </br>
