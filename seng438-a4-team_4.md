@@ -242,7 +242,6 @@ Here are advantages and disadvantages of each IDE:
  **Selenium**
  
 Advantages:
-
 Widely used: Large community and extensive documentation available.
 </br>
 Cross-browser compatibility: Works with various web browsers.
@@ -255,7 +254,6 @@ Precise control: Offers fine-grained control over web elements.
 </br>
 
 Disadvantages:
-
 Limited to web: Can't automate desktop applications.
 </br>
 Locator maintenance: Relies on HTML structure, which can change, requiring script updates.
@@ -263,11 +261,10 @@ Locator maintenance: Relies on HTML structure, which can change, requiring scrip
 Learning curve: Understanding HTML and web development concepts can be helpful.
 
 </br>
-
+</br>
  **SikuliX**
 
 Advantages:
-
 Visually intuitive: Easy to identify elements using images.
 </br>
 Desktop and web: Automates both web applications and desktop software.
@@ -277,7 +274,6 @@ Fast prototyping: Quick for creating basic automation scripts.
 </br>
 
 Disadvantages:
-
 Image dependency: Relies on image files, which can break if visuals change.
 </br>
 Less precise: Image recognition might not always be accurate, leading to errors.
