@@ -241,29 +241,37 @@ Here's a breakdown of their advantages and disadvantages:
 
 **Selenium**
 
-Advantages:
+# Advantages:
 
 Widely used: Large community and extensive documentation available.
+</br>
 Cross-browser compatibility: Works with various web browsers.
+</br>
 Language support: Supports multiple programming languages.
+</br>
 Precise control: Offers fine-grained control over web elements.
 
 
 </br>
 
-Disadvantages:
+# Disadvantages:
 
 Limited to web: Can't automate desktop applications.
+</br>
 Locator maintenance: Relies on HTML structure, which can change, requiring script updates.
+</br>
 Learning curve: Understanding HTML and web development concepts can be helpful.
 
 </br>
+
 **SikuliX**
 
 Advantages:
 
 Visually intuitive: Easy to identify elements using images.
+</br>
 Desktop and web: Automates both web applications and desktop software.
+</br>
 Fast prototyping: Quick for creating basic automation scripts.
 
 </br>
@@ -271,8 +279,11 @@ Fast prototyping: Quick for creating basic automation scripts.
 Disadvantages:
 
 Image dependency: Relies on image files, which can break if visuals change.
+</br>
 Less precise: Image recognition might not always be accurate, leading to errors.
+</br>
 Maintenance challenges: Scripts can become brittle if visuals change frequently.
+</br>
 Limited functionality: Lacks advanced features for complex web automation.
 
 # 12. How the team work/effort was divided and managed
