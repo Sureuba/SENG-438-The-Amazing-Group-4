@@ -187,6 +187,7 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 &emsp;&emsp;&emsp;&nbsp;scaleTestWithPositiveScale() </br>
 **KILLED**: Mutant 1, 2, 7, 9, 13 and 15 on Line 410
 
+ </br>
 
 At the end, we managed to kill 945 mutants and 314 survived. We were only able to increase mutation coverage by 5% (70% to 75%) because we did not understand what some of the mutations actually did to the original code. For example Mutant 21 "Substituted 1 with -1 → SURVIVED" for line 161 which was *return (b0 < this.upper && b1 >= b0);*. It did not make sense, hence we were not able to kill those types of mutations. We also noticed some of the mutants we intially killed with some tests, resurvived after adding more tests, so it did not allow our coverage to increase. The last reason for not being able to increase the coverage all the way up to 10% is because it took very long (30 minutes) to load the PIT summary everytime so, we would have to write multiple tests trying to kill different mutants before laoding the summary, an due to that, we could not track exactly why certain mutants resurvived after they were intially killed.
 
