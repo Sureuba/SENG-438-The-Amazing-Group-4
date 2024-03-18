@@ -187,12 +187,7 @@ By making the if condition to if (Double.isNaN(d1) <= 0.0). The mutant changes t
 &emsp;&emsp;&emsp;&nbsp;scaleTestWithPositiveScale() </br>
 **KILLED**: Mutant 1, 2, 7, 9, 13 and 15 on Line 410
 
- </br>
-
-At the end, we managed to kill 945 mutants and 314 survived. We were only able to increase mutation coverage by 5% (70% to 75%) because we did not understand what some of the mutations actually did to the original code. For example Mutant 21 "Substituted 1 with -1 → SURVIVED" for line 161 which was *return (b0 < this.upper && b1 >= b0);*. It did not make sense, hence we were not able to kill those types of mutations. We also noticed some of the mutants we intially killed with some tests, resurvived after adding more tests, so it did not allow our coverage to increase. The last reason for not being able to increase the coverage all the way up to 10% is because it took very long (30 minutes) to load the PIT summary everytime so, we would have to write multiple tests trying to kill different mutants before loading the summary, and due to that, we could not track exactly why certain mutants resurvived after they were intially killed.
-
-</br>
-</br>
+At the end, we managed to kill 945 mutants and 314 survived. We were only able to increase mutation coverage by 5% (70% to 75%) because we did not understand what some of the mutations actually did to the original code. For example Mutant 21 "Substituted 1 with -1 → SURVIVED" for line 161 which was *return (b0 < this.upper && b1 >= b0);*. It did not make sense, hence we were not able to kill those types of mutations. We also noticed some of the mutants we initially killed with some tests, re-survived after adding more tests, so it did not allow our coverage to increase. The last reason for not being able to increase the coverage all the way up to 10% is because it took very long (30 minutes) to load the PIT summary every time so, we would have to write multiple tests trying to kill different mutants before loading the summary, and due to that, we could not track exactly why certain mutants re-survived after they were initially killed.
 
 **Below are the new test cases which were added to DataUtilitiesTest.java the test suite in order to kill surviving mutants:**
 
@@ -241,6 +236,8 @@ At the end, we managed to kill 945 mutants and 314 survived. We were only able t
 
 **TESTS**: getCumulativePercentagesEmptyDataTest() </br>
 **KILLED**: Mutant 1 Line 262 </br>
+
+In the end, we have 50 survived mutations and killed 629 mutations. We increased our mutation coverage from 89% to 93%. It becomes extremely hard to increase the coverage more. This is mainly caused by how the code was mutated. Some are impossible to kill, i.e. `Less than to not equal` for the line `for (int v = 0; v < validCols.length; v++)`. Since they are equivalent mutations it's impossible to kill. Some descriptions of mutations are also hard to understand and we are not able to figure out what they mean.
 
 # 5. A discussion on the effect of equivalent mutants on mutation score accuracy
 Some equivalent mutants were the Incremented and Decremented mutants (post and pre) where a lot of the surviving code was because we didn't test the values after they returned a value. These equivalent mutants can be fixed using decimal values or using the class fields after they have been used once. 
