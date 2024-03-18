@@ -239,7 +239,7 @@ SikuliX, on the other hand, uses image recognition to automate anything on the s
 
 Here's a breakdown of their advantages and disadvantages:
 
-## Selenium
+ **Selenium**
  
 **Advantages:**
 
@@ -264,7 +264,7 @@ Learning curve: Understanding HTML and web development concepts can be helpful.
 
 </br>
 
-## SikuliX
+ **SikuliX**
 
 **Advantages:**
 
