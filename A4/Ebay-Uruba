@@ -1,0 +1,234 @@
+{
+  "id": "2ff9a415-7db5-432f-9afe-9b5850c079ae",
+  "version": "2.0",
+  "name": "EbayTesting",
+  "url": "https://www.ebay.ca/",
+  "tests": [{
+    "id": "97135e2f-779e-4165-8859-29a2a143a768",
+    "name": "Add to watchlist while not Logged in",
+    "commands": [{
+      "id": "606ebc03-d501-4234-9c87-7d28a18b88aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3493ebe9-6adb-4727-9c5b-9193afa9b2d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c12e802-5343-4890-9ad0-0ab6c4b0562d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,515.2000122070312)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9de51b7a-1999-4a01-8036-5a1fcab75fab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#s0-1-0-47-1-3-5-10-0\\[3\\]-2-\\@match-media-0-\\@ebay-carousel-list > .vl-carousel__item:nth-child(3) .vlp-merch-image-frame",
+      "targets": [
+        ["css=#s0-1-0-47-1-3-5-10-0\\[3\\]-2-\\@match-media-0-\\@ebay-carousel-list > .vl-carousel__item:nth-child(3) .vlp-merch-image-frame", "css:finder"],
+        ["xpath=//ul[@id='s0-1-0-47-1-3-5-10-0[3]-2-@match-media-0-@ebay-carousel-list']/li[3]/div/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/ul/li[3]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2687",
+      "windowTimeout": 2000
+    }, {
+      "id": "817fc652-4016-45d6-8142-0d59072c0e2a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2687}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f26268-faf9-4bf9-91de-4371907811f8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc93dfbb-73ad-4e71-9b1b-ec55aab22c88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ux-section__item:nth-child(2) > .ux-action > .ux-textspans",
+      "targets": [
+        ["css=.ux-section__item:nth-child(2) > .ux-action > .ux-textspans", "css:finder"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to Watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77ddd43a-3c47-4683-ada4-cd07d72bcf8a",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=signin_ggl_btn",
+      "targets": [
+        ["id=signin_ggl_btn", "id"],
+        ["css=#signin_ggl_btn", "css:finder"],
+        ["xpath=//button[@id='signin_ggl_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue with Google')]", "xpath:innerText"]
+      ],
+      "value": "Continue with Google"
+    }]
+  }, {
+    "id": "130eff3a-3ef5-4a01-8bcf-d396835fb633",
+    "name": "Add to watchlist Logged in ",
+    "commands": [{
+      "id": "245a1d40-829c-400c-8e61-4274311a5610",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5236383-910c-4204-aecb-fd7064af9cae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ebb2221-464b-49aa-8094-c56d6ee902a4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba81710a-1af8-46e8-a197-3f2eb0c0e981",
+      "comment": "",
+      "command": "click",
+      "target": "css=#s0-1-0-47-1-3-5-10-0\\[4\\]-2-\\@match-media-0-\\@ebay-carousel-list > .vl-carousel__item:nth-child(4) .vlp-merch-image-frame",
+      "targets": [
+        ["css=#s0-1-0-47-1-3-5-10-0\\[4\\]-2-\\@match-media-0-\\@ebay-carousel-list > .vl-carousel__item:nth-child(4) .vlp-merch-image-frame", "css:finder"],
+        ["xpath=//ul[@id='s0-1-0-47-1-3-5-10-0[4]-2-@match-media-0-@ebay-carousel-list']/li[4]/div/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/ul/li[4]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6466",
+      "windowTimeout": 2000
+    }, {
+      "id": "d639ea04-15a0-4e4f-8594-5ba2cccc01f1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6466}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6ee83f6-6ca7-451e-8ce0-a3051cb98501",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ux-section__item:nth-child(2) > .ux-action > .ux-textspans",
+      "targets": [
+        ["css=.ux-section__item:nth-child(2) > .ux-action > .ux-textspans", "css:finder"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to Watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0925231f-739a-40b5-b4fa-cea7109fc95a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ux-section__item:nth-child(2) > .ux-action > .ux-textspans",
+      "targets": [
+        ["css=.ux-section__item:nth-child(2) > .ux-action > .ux-textspans", "css:finder"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to Watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22ebf719-41ec-476c-bd52-78da120a1663",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ux-action:nth-child(2) > .ux-textspans--BOLD",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3f33bd26-0041-487e-9ac6-f5d52ddd6d55",
+    "name": "Share a listing through Email",
+    "commands": [{
+      "id": "edaac493-9b62-41e1-a5ca-d8428200adc8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "832cc4d8-7cd7-453e-8e07-aee6fbab9c51",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d79c257-a8aa-461f-9714-026a59278f72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vl-carousel__item:nth-child(4) > .vl-popular-destinations--evo-v1__link > .vl-image",
+      "targets": [
+        ["css=.vl-carousel__item:nth-child(4) > .vl-popular-destinations--evo-v1__link > .vl-image", "css:finder"],
+        ["xpath=//ul[@id='s0-1-0-47-1-3-5-10-0[7]-10-@match-media-0-@ebay-carousel-list']/li[4]/a/div", "xpath:idRelative"],
+        ["xpath=//li[4]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd739860-5971-4c2b-8095-a4e6bc08400c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.carousel__snap-point:nth-child(1) > .b-tile-wrapper .b-img",
+      "targets": [
+        ["css=.carousel__snap-point:nth-child(1) > .b-tile-wrapper .b-img", "css:finder"],
+        ["xpath=//img[@alt='Bose Portable Home Speaker Bluetooth, Certified Refurbished']", "xpath:img"],
+        ["xpath=//ul[@id='s0-28-9-0-1[1]-0-0-4-list']/li/div/a/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0901f83-5fc3-48db-a6bc-73139460ceea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.trigger-container .ux-textspans",
+      "targets": [
+        ["css=.trigger-container .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='x-social-share']/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Share')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "400610f7-7e1f-475e-b279-8ecd066bcaab",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn--pinterest > .btn--social-media__icon-wrapper",
+      "targets": [
+        ["css=.btn--pinterest > .btn--social-media__icon-wrapper", "css:finder"],
+        ["xpath=//div[@id='x-social-share']/div/div/div[2]/div[2]/div[3]/div/div/div/div/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "71dc0e7d-d8e6-4453-b2d8-c4171e94c025",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["97135e2f-779e-4165-8859-29a2a143a768"]
+  }],
+  "urls": ["https://www.ebay.ca/"],
+  "plugins": []
+}
