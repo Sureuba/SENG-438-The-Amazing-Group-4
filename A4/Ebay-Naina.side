@@ -1,0 +1,825 @@
+{
+  "id": "b7e08685-d218-4df6-af2b-fa950d1f178f",
+  "version": "2.0",
+  "name": "SENGG 438 A4",
+  "url": "https://www.ebay.ca",
+  "tests": [{
+    "id": "0e8921f2-ab08-4ae3-8a5c-204cddcb48c2",
+    "name": "Saving Search Logged In",
+    "commands": [{
+      "id": "67149308-769c-4be3-ac6d-f458192518c7",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7931bf7e-b886-4d05-9575-b0f50aa986f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e23383fa-4b4d-41eb-9452-f1f9aa360fd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "251c754c-0a1b-4401-8744-0fdfe4f2586f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gh-eb-li-a > .gh-eb-Geo-flag",
+      "targets": [
+        ["css=.gh-eb-li-a > .gh-eb-Geo-flag", "css:finder"],
+        ["xpath=//li[@id='gh-eb-Geo']/div/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Current language English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fef4e6d7-ba8c-47c0-8486-bda72e558e99",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gh-eb-li-a > .gh-eb-Geo-flag",
+      "targets": [
+        ["css=.gh-eb-li-a > .gh-eb-Geo-flag", "css:finder"],
+        ["xpath=//li[@id='gh-eb-Geo']/div/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Current language English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17af8b35-ccf1-42ac-bcea-610de9654098",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "cat toy"
+    }, {
+      "id": "76fbf60f-271d-4971-9578-2cc33ac66e22",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-btn",
+      "targets": [
+        ["id=gh-btn", "id"],
+        ["css=#gh-btn", "css:finder"],
+        ["xpath=//input[@id='gh-btn']", "xpath:attributes"],
+        ["xpath=//table[@id='gh-search-wrap']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6b260ee-3ce4-437f-83d2-7d0c1ecd6dfd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__0']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "131aec3c-f134-4854-9ee1-98445c7ea5f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__0']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3a68a7e-4507-4065-81d3-099e3c0c6de5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(2) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(2) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__1']/ul/li[2]/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/ul/li[2]/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "022e1e59-91b5-4be5-a817-57e08769a36f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(2) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(2) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__1']/ul/li[2]/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/ul/li[2]/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3cd6118-04da-437f-98bf-339a7e0989d5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__1']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/ul/li/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da3070f6-223d-439b-a077-3748239ab9d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__1']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/ul/li/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7185d35-06a6-4119-80d7-7f910ffbe188",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__1']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/ul/li/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbbe207d-2f85-428c-b8ec-053434f05d76",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,356)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e0307ae-fde5-4551-b651-b150c9c9e532",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(5) .x-refine__select__svg > div .cbx",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(5) .x-refine__select__svg > div .cbx", "css:finder"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[5]/div/a/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[5]/div/a/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39bf7eb4-fa2b-473b-a550-9f015f47e75c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(5) .x-refine__select__svg > div .cbx",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(5) .x-refine__select__svg > div .cbx", "css:finder"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[5]/div/a/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[5]/div/a/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a1f3b2a-823f-4fdf-8c22-89cd9c092c0c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[4]/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[4]/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be47ca32-e809-4502-bedc-c5cb47c7e4b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[4]/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[4]/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e371645c-ee5d-4908-acd2-2accadd0ffb3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=cat toys",
+      "targets": [
+        ["linkText=cat toys", "linkText"],
+        ["css=span > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/sch/i.html?_nkw=cat+toys&_sop=12')]", "xpath:href"],
+        ["xpath=//span[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "247dff2f-ef4f-42cc-bea4-e0d5a618c605",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=cat toys",
+      "targets": [
+        ["linkText=cat toys", "linkText"],
+        ["css=span > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/sch/i.html?_nkw=cat+toys&_sop=12')]", "xpath:href"],
+        ["xpath=//span[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6420638b-26a2-47f8-9d20-91e37a45ae0f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.follow-heart-wrapper",
+      "targets": [
+        ["css=.follow-heart-wrapper", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div/div[2]/div/span/span/span/span/span/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41c4f4cc-32e2-428e-a4e7-d714e26726fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.follow-heart-wrapper",
+      "targets": [
+        ["css=.follow-heart-wrapper", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div/div[2]/div/span/span/span/span/span/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7250487-b1a6-49e1-abf8-c9e39acccdc6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.faux-link",
+      "targets": [
+        ["css=.faux-link", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div/div[2]/div/span/span/span/span/span/div/div/span/span/span/span/button", "xpath:idRelative"],
+        ["xpath=//span/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Saved')]", "xpath:innerText"]
+      ],
+      "value": "Save this search"
+    }]
+  }, {
+    "id": "9926b86d-0331-4972-98cf-12b62cb3a152",
+    "name": "Saving Search Not Logged In",
+    "commands": [{
+      "id": "8c619554-cefa-4748-b694-c42ee8d59384",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "404b1c1d-4e08-4d4d-8873-f088ba147b4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c431678f-60b2-481c-bedf-2673b4bf507f",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74a70db6-afdd-4e83-a096-ca677ce97e53",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Watch List",
+      "targets": [
+        ["linkText=Watch List", "linkText"],
+        ["css=.watchlist-menu", "css:finder"],
+        ["xpath=//a[contains(text(),'Watch List')]", "xpath:link"],
+        ["xpath=//li[@id='gh-wl-click']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/mye/myebay/watchlist')]", "xpath:href"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watch List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7248ca84-74f2-4980-9ccd-47a262cffe17",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Watch List",
+      "targets": [
+        ["linkText=Watch List", "linkText"],
+        ["css=.watchlist-menu", "css:finder"],
+        ["xpath=//a[contains(text(),'Watch List')]", "xpath:link"],
+        ["xpath=//li[@id='gh-wl-click']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/mye/myebay/watchlist')]", "xpath:href"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watch List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83612664-c886-45ee-afc4-1e01164be8d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "cat toy"
+    }, {
+      "id": "97d37bd2-782a-4cb2-baec-fb176c61531e",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-btn",
+      "targets": [
+        ["id=gh-btn", "id"],
+        ["css=#gh-btn", "css:finder"],
+        ["xpath=//input[@id='gh-btn']", "xpath:attributes"],
+        ["xpath=//table[@id='gh-search-wrap']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e31e5674-06be-482e-96f2-82708de241eb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,113)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa581317-b294-4efe-b370-cf9228c6991e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__0']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a09091-710f-4fbd-8ccf-bea8e6a3d515",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,241)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6e068e3-b106-474b-8fb7-5a89569ca3f5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,329)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d318a150-489f-4b4e-b175-f65ead62632d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__1 .x-refine__main__list--value:nth-child(1) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__1']/ul/li/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/ul/li/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "668c0bb9-3bc5-4545-b863-bc6a6da1d38d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .x-refine__select__svg > div .cbx",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .x-refine__select__svg > div .cbx", "css:finder"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[4]/div/a/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[4]/div/a/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faee3a54-94e2-4f5b-b099-391467a75b42",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .x-refine__select__svg > div .cbx",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .x-refine__select__svg > div .cbx", "css:finder"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[4]/div/a/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[4]/div/a/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee8c6edf-431c-4f79-8781-3b72f668df62",
+      "comment": "",
+      "command": "click",
+      "target": "css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .checkbox__control",
+      "targets": [
+        ["css=#x-refine__group_1__2 .x-refine__main__list--value:nth-child(4) .checkbox__control", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='x-refine__group_1__2']/ul/li[4]/div/a/div/span/input", "xpath:idRelative"],
+        ["xpath=//li[3]/div[2]/ul/li[4]/div/a/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c969735-cf0e-4d3b-b62c-125e88d2b06f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(3) .x-refine__select__svg > div > div",
+      "targets": [
+        ["css=#x-refine__group_1__0 .x-refine__main__list--value:nth-child(3) .x-refine__select__svg > div > div", "css:finder"],
+        ["xpath=//div[@id='x-refine__group_1__0']/ul/li[3]/div/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//li[3]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc3f01ca-e90d-4614-8561-0c03949ef675",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.faux-link",
+      "targets": [
+        ["css=.faux-link", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div/div[2]/div/span/span/span/span/span/div/div/button", "xpath:idRelative"],
+        ["xpath=//span/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save this search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3993e588-4f69-426e-b890-31ae03db56ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.faux-link",
+      "targets": [
+        ["css=.faux-link", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/div/div/div[2]/div/span/span/span/span/span/div/div/button", "xpath:idRelative"],
+        ["xpath=//span/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save this search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c69301ff-fda4-465b-812f-a4a665090fa1",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=signin_ggl_btn",
+      "targets": [
+        ["id=signin_ggl_btn", "id"],
+        ["css=#signin_ggl_btn", "css:finder"],
+        ["xpath=//button[@id='signin_ggl_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue with Google')]", "xpath:innerText"]
+      ],
+      "value": "Continue with Google"
+    }]
+  }, {
+    "id": "2605fba7-6cfd-4b32-9bdb-f0f97bb1e829",
+    "name": "Buy It Now Logged In",
+    "commands": [{
+      "id": "dc582986-d2bf-4f2e-beae-32f7f45c02f9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fed91b7-6966-4ec9-81ed-83197dfba96a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb99f574-5a5a-44ac-ac8e-d2424ca1c50f",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ecc3368-026b-40ae-9bff-bea58c0ddc9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "iphone case"
+    }, {
+      "id": "3b63b64f-0c1c-4403-8144-e8e7a85bcb5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-btn",
+      "targets": [
+        ["id=gh-btn", "id"],
+        ["css=#gh-btn", "css:finder"],
+        ["xpath=//input[@id='gh-btn']", "xpath:attributes"],
+        ["xpath=//table[@id='gh-search-wrap']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6536627e-def1-49ae-99ab-78870fe56b0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item422c3720b0 img",
+      "targets": [
+        ["css=#item422c3720b0 img", "css:finder"],
+        ["xpath=//img[@alt='For iPhone 14 13 12 11 Pro Max XS SE X XR 7 8 Plus Ring Stand Case Rugged Cover']", "xpath:img"],
+        ["xpath=//li[@id='item422c3720b0']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/a/div/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win88",
+      "windowTimeout": 2000
+    }, {
+      "id": "7b322f68-328d-4d63-8b46-680f005a59d3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win88}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d99c22d8-30ea-47fe-a29c-827a3a73477a",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [
+        ["id=x-msku__select-box-1000", "id"],
+        ["css=#x-msku__select-box-1000", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1000']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[4]/div/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "397cbd5e-d16c-4765-a9b6-d413d8fb98b8",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [],
+      "value": "label=For Apple iPhone 14"
+    }, {
+      "id": "7b99b212-a80a-446f-9922-2fbe37189b50",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1001",
+      "targets": [
+        ["id=x-msku__select-box-1001", "id"],
+        ["css=#x-msku__select-box-1001", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1001']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[4]/div[2]/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/label/span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf8d82ad-73a4-49cd-87cf-3205ad6542a6",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1001",
+      "targets": [],
+      "value": "label=Black"
+    }, {
+      "id": "1c07b03d-d478-4bb1-857c-2e908b31beaa",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a08414a2-2e1c-4169-9c23-e39cb9e801cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=binBtn_btn_1",
+      "targets": [
+        ["id=binBtn_btn_1", "id"],
+        ["linkText=Buy It Now", "linkText"],
+        ["css=#binBtn_btn_1", "css:finder"],
+        ["xpath=//a[@id='binBtn_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://pay.ebay.ca/rxo?action=create&rypsvc=true&pagename=ryp&item=284209651888&quantity=0&TransactionId=-1')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buy It Now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca1dea94-c353-4eac-9151-77a8cb05882d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w111",
+      "targets": [
+        ["css=.w111", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Where should we deliver your order?')]", "xpath:innerText"]
+      ],
+      "value": "Where should we deliver your order?"
+    }]
+  }, {
+    "id": "14035843-2379-48ee-90db-7eaedc337afc",
+    "name": "Buy it Now Not Logged In",
+    "commands": [{
+      "id": "8d6df9bb-4306-4258-ac6f-6c598410c47b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c13aa6ca-1285-4bbd-8ab8-df7a057ed560",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x814",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5cac958-526a-4c8c-9f9b-c88b2d8301c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b18f6be-c8c1-4d65-919c-52a0d16611a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "iphone case"
+    }, {
+      "id": "f0b6563f-b411-4b89-a63e-3647ef77858b",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-btn",
+      "targets": [
+        ["id=gh-btn", "id"],
+        ["css=#gh-btn", "css:finder"],
+        ["xpath=//input[@id='gh-btn']", "xpath:attributes"],
+        ["xpath=//table[@id='gh-search-wrap']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fe6a3e4-b590-4296-83f5-187a9f48233c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item422c3720b0 img",
+      "targets": [
+        ["css=#item422c3720b0 img", "css:finder"],
+        ["xpath=//img[@alt='For iPhone 14 13 12 11 Pro Max XS SE X XR 7 8 Plus Ring Stand Case Rugged Cover']", "xpath:img"],
+        ["xpath=//li[@id='item422c3720b0']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div/div/a/div/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5353",
+      "windowTimeout": 2000
+    }, {
+      "id": "87d3e970-9125-45ba-a2d4-4adfb77533fe",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5353}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24c274dd-de7a-4f51-90fc-cc96f94e7a8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [
+        ["id=x-msku__select-box-1000", "id"],
+        ["css=#x-msku__select-box-1000", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1000']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[4]/div/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5d1f687-8b21-4b44-bdaa-3e9e3cca6b9e",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1000",
+      "targets": [],
+      "value": "label=For Apple iPhone 14"
+    }, {
+      "id": "408b6227-b088-4c37-a2ab-97573c2b5484",
+      "comment": "",
+      "command": "click",
+      "target": "id=x-msku__select-box-1001",
+      "targets": [
+        ["id=x-msku__select-box-1001", "id"],
+        ["css=#x-msku__select-box-1001", "css:finder"],
+        ["xpath=//select[@id='x-msku__select-box-1001']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[4]/div[2]/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/label/span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2a0bc6a-12ee-4f3a-a114-ecd881cf4647",
+      "comment": "",
+      "command": "select",
+      "target": "id=x-msku__select-box-1001",
+      "targets": [],
+      "value": "label=Black"
+    }, {
+      "id": "068a8bf1-a901-46ae-b7a1-c42af36f2d89",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "280f74a4-93a6-475e-abdb-37265bafd4bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=binBtn_btn_1",
+      "targets": [
+        ["id=binBtn_btn_1", "id"],
+        ["linkText=Buy It Now", "linkText"],
+        ["css=#binBtn_btn_1", "css:finder"],
+        ["xpath=//a[@id='binBtn_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/atc/binctr?item=284209651888&quantity=0&fromPage=4429486&rev=68&fb=1&gch=1')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buy It Now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "148edd74-2806-409f-88f4-2b230f50ab00",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Sign in to check out",
+      "targets": [
+        ["linkText=Sign in to check out", "linkText"],
+        ["css=.ux-bin-nudge__signInCheckOut > .ux-call-to-action", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div[2]/ul/li/div/div/div/div[2]/div[3]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/atc/binctr?item=284209651888&quantity=0&fromPage=4429486&rev=68&fb=1&gch=1&hideGxo=1&_trksid=p4429486.m2548.l44296')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in to check out')]", "xpath:innerText"]
+      ],
+      "value": "Sign in to check out"
+    }]
+  }],
+  "suites": [{
+    "id": "6945cb5d-f249-49c2-81d3-a79b111ddb44",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ebay.ca/"],
+  "plugins": []
+}
