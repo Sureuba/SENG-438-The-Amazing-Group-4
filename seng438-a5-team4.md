@@ -44,7 +44,10 @@ From this chart, it can be seen that at MTTF min, the data points are in the the
 </br>
 From this chart, it can be seen that when MTTF min is doubled, the data points go into the accept (green portion) part of the system
 
+</br>
+</br>
 
+The mean time to Failure (MTTF) min was derived by finding the the point near the acceptance (green portion) threshhold of the graph  (this can be seen above in the MMTF min graph above as well). This is due to the fact that MTTF min represents the point at which the system under test becomes acceptable. With normalized failure data represented by the ratio of failure time to MTTF, we crafted graphical representations showcasing Twice MTTFmin and Half MTTFmin. By altering the threshold for the maximum acceptable number of failures, we crafted and illustrated these graphs accordingly.
 # 
 
 # Comparison of Results
