@@ -64,6 +64,7 @@ The disadvantage also comes with "predicting the future". We have unlimited amou
 # Assessment Using Reliability Demonstration Chart 
 </br>
 
+## 3 plots for MTTFmin, twice and half of it for test data
 **Half MTTF min**
 </br>
 <img width="664" alt="Screenshot 2024-04-06 at 10 44 14 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/b15b5edf-8b58-42d4-a644-1c0659d387c8">
@@ -93,18 +94,20 @@ From this chart, it can be seen that when MTTF min is doubled, theSUT is within 
 </br>
 </br>
 
+## Evaluation and justification of how you decide the MTTFmin
+
 The mean time to Failure (MTTF) min was found through trial and error. We first started by adjusting the data to ensure that the graph axes were correct and then adjusted the data itself for calculating MTTF until we found an ideal value. We derived the MTTF min value which was 0.33 by finding the the point near the acceptance (green portion) threshold of the graph  (this can be seen above in the MMTF min graph above as well). This is due to the fact that MTTF min represents the point at which the system under test becomes acceptable. With normalized failure data represented by the ratio of failure time to MTTF, we crafted graphical representations showcasing Twice MTTFmin and Half MTTFmin. By altering the threshold for the maximum acceptable number of failures, we crafted and illustrated these graphs accordingly. Through consistent trial and error with the RDC chart, we were able to find the MTTF min.
 
 </br>
 </br>
 
-**Advantages vs. Disadvantages of RDC**
+## Advantages vs. Disadvantages of RDC
 
-Disadvantages:
+**Disadvantages:**
 * limiting factors and limited information that affects the reliability, such as environmental conditions, usage patterns or variations in manufacturing processes.
 * Although the RDC displays the number of failures per unit time, it does not clearly indicate how or why the system failed, which is important when debugging the system.
 
-Advantages:
+**Advantages:**
 * The visualizations of the data in the RDC charts, the rejected, continued and accepted regions make it easier to understand if data is actually reliable.
 * Color coded
 * Overall it is easier to make decisions using RDC related to code and its reliability.
