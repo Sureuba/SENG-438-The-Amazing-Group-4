@@ -10,7 +10,7 @@
 |                 |  Chuhang |
 
 # Introduction
-
+In this lab, we evaluated the reliability and usage of a system utilizing tools such as C-SFRAT and the Reliability Demonstration Chart (RDC-11) on Excel.
 # 
 
 # Assessment Using Reliability Growth Testing 
