@@ -56,7 +56,7 @@ The mean time to Failure (MTTF) min was found through trial and error. We first 
 
 Disadvantages:
 * limiting factors and limited information that affects the reliability, such as environmental conditions, usage patterns or variations in manufacturing processes.
-* Although the RDC displays the number of failures per unit time, it does not tell us how or why the system failed, which is important when debugging the system.
+* Although the RDC displays the number of failures per unit time, it does not indicate how or why the system failed, which is important when debugging the system.
 
 Advantages:
 * The visualizations of the data in the RDC charts, the rejected, continued and accepted regions make it easier to understand if data is actually reliable.
