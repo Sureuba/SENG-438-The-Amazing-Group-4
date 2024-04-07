@@ -33,7 +33,7 @@ From this chart, it can be seen that when MTTF min is halved, the SUT is within 
 </br>
 <img width="665" alt="Screenshot 2024-04-06 at 10 43 40 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/321fe67b-7540-4bec-a7a0-f493cb7c6bdf">
 </br>
-From this chart, it can be seen that at MTTF min, the SUT is within the continue (yellow portion) part of the system
+From this chart, it can be seen that at MTTF min, the SUT is within the continue testing (yellow portion) part of the system
 
 </br>
 </br>
