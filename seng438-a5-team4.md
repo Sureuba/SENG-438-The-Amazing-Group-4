@@ -70,6 +70,7 @@ Advantages:
 # Discussion on Similarity and Differences of the Two Techniques
 
 # How the team work/effort was divided and managed
+Our whole group worked on the assignment together, some parts were split up to get faster coverage and then explained our approaches and results to everyone in order to properly run and understand the assignment thoroughly. Bill and Chuhang primarily worked on part 1 and Naina and Uruba primarily worked on part 2. 
 
 # 
 
