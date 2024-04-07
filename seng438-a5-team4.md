@@ -53,9 +53,14 @@ The mean time to Failure (MTTF) min was found through trial and error. We first 
 </br>
 
 **Advantages vs. Disadvantages of RDC**
+Disadvantages:
+* limiting factors and limited information that affects the reliability, such as environmental conditions, usage patterns or variations in manufacturing processes.
+* Although the RCD displays the number of failures per unit time, it does not tell us how or why the system failed, which is important when debugging the system.
 
-The main problem with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge disadvantage. Another factor is that there are limiting factors and limited information that affects the reliability, such as environmental conditions, usage patterns or variations in manufacturing processes.
-The advantages were the visualizations of the data in the RDC charts, the rejected, continued and accepted regions make it easier to understand if data is actually reliable. Overall it is easier to make decisions using RDC related to code and its reliability.
+Advantages:
+* The visualizations of the data in the RDC charts, the rejected, continued and accepted regions make it easier to understand if data is actually reliable.
+* Color coded
+* Overall it is easier to make decisions using RDC related to code and its reliability.
 
 # 
 
@@ -68,5 +73,7 @@ The advantages were the visualizations of the data in the RDC charts, the reject
 # 
 
 # Difficulties encountered, challenges overcome, and lessons learned
+
+The main problem with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge disadvantage. We encountered a dilemma regarding the precise method and location for inputting failure data. In order to align the data with the RDC format, we opted to divide the failure metrics by 10. Subsequently, we found that determining the maximum permissible failure threshold significantly impacts the functionality of the RDC. Our experience with RDC testing underscored its efficacy in evaluating system reliability, mainly by establishing and adhering to predefined maximum failure thresholds.
 
 # Comments/feedback on the lab itself
