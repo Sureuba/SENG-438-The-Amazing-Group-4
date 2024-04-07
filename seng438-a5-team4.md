@@ -74,6 +74,6 @@ Advantages:
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-The main problem with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge disadvantage. We encountered a dilemma regarding the precise method and location for inputting failure data. In order to align the data with the RDC format, we opted to divide the failure metrics by 10. Subsequently, we found that determining the maximum permissible failure threshold significantly impacts the functionality of the RDC. Our experience with RDC testing underscored its efficacy in evaluating system reliability, mainly by establishing and adhering to predefined maximum failure thresholds.
+The main problem with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge disadvantage. We encountered a dilemma regarding the precise method and location for inputting failure data. 
 
 # Comments/feedback on the lab itself
