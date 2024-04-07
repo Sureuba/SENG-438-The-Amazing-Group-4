@@ -79,4 +79,4 @@ Our whole group worked on the assignment together. Bill and Chuhang primarily wo
 The main problem we with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge challenge. We encountered the issue of knowing the precise method and location for inputting failure data. It was just a hurdle to learn how to use a new software (espcially with unclear instructions) and getting to use to it's functionalities and features.
 
 # Comments/feedback on the lab itself
-The instructions were very inclear and vague, so we had to learn ourselves how to use the tools like RDC.
+The instructions were very inclear and vague, so we had to learn ourselves how to use the tools like RDC-11.
