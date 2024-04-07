@@ -49,10 +49,10 @@ From this chart, it can be seen that when MTTF min is doubled, the data points g
 
 The mean time to Failure (MTTF) min was found through trial and error. We first started by adjusting the data to ensure that the graph axes were correct and then adjusted the data itself for calculating MTTF until we found an ideal value. We derived the MTTF min value which was 0.33 by finding the the point near the acceptance (green portion) threshhold of the graph  (this can be seen above in the MMTF min graph above as well). This is due to the fact that MTTF min represents the point at which the system under test becomes acceptable. With normalized failure data represented by the ratio of failure time to MTTF, we crafted graphical representations showcasing Twice MTTFmin and Half MTTFmin. By altering the threshold for the maximum acceptable number of failures, we crafted and illustrated these graphs accordingly. Through consistent trial and error with the RDC chart, we were able to find the MTTF min.
 
+</br>
+</br>
 
 **Advantages vs. Disadvantages of RDC**
-
-</br>
 
 The main problem with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge disadvantage. Another factor is that there are limiting factors and limited information that affects the reliability, such as environmental conditions, usage patterns or variations in manufacturing processes.
 The advantages were the visualizations of the data in the RDC charts, the rejected, continued and accepted regions make it easier to understand if data is actually reliable. Overall it is easier to make decisions using RDC related to code and its reliability.
