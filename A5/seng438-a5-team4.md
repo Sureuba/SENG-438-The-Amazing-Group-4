@@ -94,7 +94,7 @@ From this chart, it can be seen that when MTTF min is doubled, theSUT is within 
 </br>
 </br>
 
-## Evaluation and justification of how you decide the MTTFmin
+## Evaluation and justification of the MTTFmin was decided
 
 The mean time to Failure (MTTF) min was found through trial and error. We first started by adjusting the data to ensure that the graph axes were correct and then adjusted the data itself for calculating MTTF until we found an ideal value. We derived the MTTF min value which was 0.33 by finding the the point near the acceptance (green portion) threshold of the graph  (this can be seen above in the MMTF min graph above as well). This is due to the fact that MTTF min represents the point at which the system under test becomes acceptable. With normalized failure data represented by the ratio of failure time to MTTF, we crafted graphical representations showcasing Twice MTTFmin and Half MTTFmin. By altering the threshold for the maximum acceptable number of failures, we crafted and illustrated these graphs accordingly. Through consistent trial and error with the RDC chart, we were able to find the MTTF min.
 
