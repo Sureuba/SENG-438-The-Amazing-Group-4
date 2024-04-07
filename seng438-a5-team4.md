@@ -70,13 +70,13 @@ Advantages:
 # Discussion on Similarity and Differences of the Two Techniques
 
 # How the team work/effort was divided and managed
-Our whole group worked on the assignment together,Bill and Chuhang primarily worked on part 1 and Naina and Uruba primarily worked on part 2. Some parts were split up to increase efficiency and then explained our approaches and results to everyone in order to properly run and understand the assignment thoroughly. 
+Our whole group worked on the assignment together. Bill and Chuhang primarily worked on part 1 while Naina and Uruba primarily worked on part 2. This split was to increase our efficiency. After the completion of both parts, we peer reviewed and explained our approaches and results to one another in order to ensure everyone was on the same page and understood the assignment thoroughly. 
 
 # 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-The main problem we with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge disadvantage. We encountered the issue of knowing the precise method and location for inputting failure data. 
+The main problem we with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge challenge. We encountered the issue of knowing the precise method and location for inputting failure data. It was just a hurdle to learn how to use a new software (espcially with unclear instructions) and getting to use to it's functionalities and features.
 
 # Comments/feedback on the lab itself
-The instructions were very inclear and vague, so we had to learn ourselves how to use the RDC.
+The instructions were very inclear and vague, so we had to learn ourselves how to use the tools like RDC.
