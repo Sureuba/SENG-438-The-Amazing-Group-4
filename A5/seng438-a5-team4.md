@@ -108,7 +108,9 @@ We would use reliability growth to forecast the system's reliability and make ad
 
 # Discussion on Similarity and Differences of the Two Techniques
 
-Both techniques are testing for the reliability of a system. The data provided to both techniques are similar, they can be interpreted from time between failures or failure count. However, they are interpreting the data differently. RDC indicates the reliability of a system at the last data point entry, while reliability growth analysis the overall trend of the system.
+Both techniques are testing for the reliability of a system and aims to increase max reliability. The data provided to both techniques are similar, they can be interpreted from time between failures or failure count. However, they are interpreting the data differently. RDC indicates the reliability of a system at the last data point entry, while reliability growth analysis the overall trend of the system.
+
+RGT/RGA focuses on interpreting data to identify trends and patters in the systems reliablity over time and provides a hollistic view on performance and how reliability changes over the course of testing. While RDC mainly focuses on the reliability of the system at a certain point in time (not hollistically). The RDC provides a snapshot of the systems reliability status based in accumulated failure data.
 
 # How the team work/effort was divided and managed
 
