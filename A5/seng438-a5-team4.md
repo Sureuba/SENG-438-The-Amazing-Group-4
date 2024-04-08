@@ -62,7 +62,6 @@ The advantage of a reliability growth analysis is that it gives us a quick and e
 The disadvantage also comes with "predicting the future". We have unlimited amount of parameters for each model. Every system is different, there could be dozens of models that fits a system. It takes a lot of time and resources to go through each model and get the desired result. In the end, it comes down to experience and knowledge to know how the system works, and which model fits the system the best. 
 
 # Assessment Using Reliability Demonstration Chart 
-</br>
 
 ## 3 plots for MTTFmin, twice and half of it for test data
 **Half MTTF min**
@@ -70,10 +69,6 @@ The disadvantage also comes with "predicting the future". We have unlimited amou
 <img width="664" alt="Screenshot 2024-04-06 at 10 44 14 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/b15b5edf-8b58-42d4-a644-1c0659d387c8">
 </br>
 From this chart, it can be seen that when MTTF min is halved, the SUT is within the rejection (red portion) part of the system
-
-
-
-</br>
 </br>
 
 **MTTF min**
@@ -81,8 +76,6 @@ From this chart, it can be seen that when MTTF min is halved, the SUT is within 
 <img width="665" alt="Screenshot 2024-04-06 at 10 43 40 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/321fe67b-7540-4bec-a7a0-f493cb7c6bdf">
 </br>
 From this chart, it can be seen that at MTTF min, the SUT is within the continue testing (yellow portion) part of the system
-
-</br>
 </br>
 
 **Double MTTF min**
@@ -90,16 +83,11 @@ From this chart, it can be seen that at MTTF min, the SUT is within the continue
 <img width="657" alt="Screenshot 2024-04-06 at 10 44 47 PM" src="https://github.com/Sureuba/SENG-438-The-Amazing-Group-4/assets/113148202/81aafacf-a8df-40ae-a51b-12690b4b2bde">
 </br>
 From this chart, it can be seen that when MTTF min is doubled, theSUT is within the accept (green portion) part of the system
-
-</br>
 </br>
 
 ## Evaluation and justification of the MTTFmin was decided
 
 The mean time to Failure (MTTF) min was found through trial and error. We first started by adjusting the data to ensure that the graph axes were correct and then adjusted the data itself for calculating MTTF until we found an ideal value. We derived the MTTF min value which was 0.33 by finding the the point near the acceptance (green portion) threshold of the graph  (this can be seen above in the MMTF min graph above as well). This is due to the fact that MTTF min represents the point at which the system under test becomes acceptable. With normalized failure data represented by the ratio of failure time to MTTF, we crafted graphical representations showcasing Twice MTTFmin and Half MTTFmin. By altering the threshold for the maximum acceptable number of failures, we crafted and illustrated these graphs accordingly. Through consistent trial and error with the RDC chart, we were able to find the MTTF min.
-
-</br>
-</br>
 
 ## Advantages vs. Disadvantages of RDC
 
