@@ -114,7 +114,13 @@ The mean time to Failure (MTTF) min was found through trial and error. We first 
 
 # Comparison of Results
 
+SRTAT indicated a trend on how the software's reliability growth. From that graph we can have an idea of how will the system perform over a long time period. It does not tell us if the system is reliable to use or not. While the RDC did give us a minimum MTTF of 0.33, and we can tell from the end point that if the system is acceptable, requires more testing, or is accepted.
+
+We would use reliability growth to forecast the system's reliability and make adjustments as needed. I.E. if we want to reach a target reliability faster we would try to make the system more stable now, so that the reliability graph would increase more drastically. Reliability demonstration is used to analyze the system's performance now. The endpoint's position tells us about the system's reliability at that moment.
+
 # Discussion on Similarity and Differences of the Two Techniques
+
+Both techniques are testing for the reliability of a system. The data provided to both techniques are similar, they can be interpreted from time between failures or failure count. However, they are interpreting the data differently. RDC indicates the reliability of a system at the last data point entry, while reliability growth analysis the overall trend of the system.
 
 # How the team work/effort was divided and managed
 
@@ -122,7 +128,8 @@ Our whole group worked on the assignment together. Bill and Chuhang primarily wo
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-The main problem we with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge challenge. We encountered the issue of knowing the precise method and location for inputting failure data. It was just a hurdle to learn how to use a new software (especially with unclear instructions) and getting to use to it's functionalities and features.
+The main problem we with the RDC.xls file was the issue of where and how to use the failure data form the DAT files, thus learning it and how to use it was a huge challenge. We encountered the issue of knowing the precise method and location for inputting failure data. It was just a hurdle to learn how to use a new software (especially with unclear instructions) and getting to use to it's functionalities and features. Similarly with SRTAT, only 2 models worked with our computers. There are many parameters for each model, but there is no documentation on how to use them. In the end we managed to get the data input file working and produce a software reliability chart.
 
 # Comments/feedback on the lab itself
-The instructions were very unclear and vague, so we had to learn ourselves how to use the tools like RDC-11.
+
+The instructions were very unclear and vague, so we had to learn ourselves how to use the tools like RDC-11 and SRTAT. The documentation and data provided is also insufficient for an assignment like this.
